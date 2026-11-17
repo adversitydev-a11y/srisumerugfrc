@@ -3451,34 +3451,80 @@ figure.snip1390.hover .profile.cs_avatar_letter {
   }
 }
 
-/* Footer 3-Column Products Layout */
-.cs_footer_style_1 .cs_footer_col:first-child {
-  flex: 0.85 !important;
+/* ===============================================================
+   Footer Layout & Alignment Standardization
+================================================================= */
+.cs_footer_style_1 .cs_footer_main .container,
+.cs_footer_style_1 .cs_footer_main .container-fluid {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 20px;
   padding-right: 20px;
 }
 
+.cs_footer_style_1 .cs_footer_rows {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+/* Column 1: Quick Links */
+.cs_footer_style_1 .cs_footer_col:first-child {
+  flex: 1.2 !important;
+  min-width: 250px;
+  padding: 70px 30px 70px 0 !important;
+  border-left: 0 !important;
+}
+
+/* Column 2: Our Products */
 .cs_footer_col_products {
-  flex: 3 !important;
-  padding-left: 45px !important;
-  padding-right: 40px !important;
+  flex: 2.6 !important;
+  padding: 70px 36px !important;
+  border-left: 1px solid rgba(13, 13, 13, 0.1) !important;
 }
 
+/* Column 3: Contact Us */
 .cs_footer_style_1 .cs_footer_col:last-child {
-  flex: 1.15 !important;
-  padding-left: 45px !important;
+  flex: 1.2 !important;
+  min-width: 250px;
+  padding: 70px 0 70px 36px !important;
+  border-left: 1px solid rgba(13, 13, 13, 0.1) !important;
 }
 
+/* Prevent any awkward text wrapping in Quick Links & throughout footer */
+.cs_footer_style_1 .cs_footer_col:first-child .cs_footer_menu_list li {
+  white-space: nowrap !important;
+}
+
+.cs_footer_style_1 .cs_footer_col:first-child .cs_footer_menu_list a {
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Products Column Inner Layout */
 .cs_footer_products_3col_wrap {
-  display: grid;
-  grid-template-columns: minmax(max-content, 1.85fr) minmax(max-content, 1fr);
-  gap: 56px;
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
   align-items: start;
+}
+
+.cs_footer_products_gfrc_group {
+  flex: 1.85;
+}
+
+.cs_footer_products_frp_group {
+  flex: 1;
 }
 
 .cs_footer_gfrc_2col {
   display: grid;
-  grid-template-columns: repeat(2, max-content);
-  gap: 32px;
+  grid-template-columns: repeat(2, minmax(max-content, 1fr));
+  gap: 16px 28px;
 }
 
 .cs_footer_subheading {
@@ -3488,79 +3534,102 @@ figure.snip1390.hover .profile.cs_avatar_letter {
   color: var(--accent-color, #caa05c);
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  margin-bottom: 16px;
-  padding-bottom: 6px;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
   border-bottom: 1px dashed rgba(202, 160, 92, 0.35);
   white-space: nowrap;
 }
 
+.cs_footer_subheading_flex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Center both subheadings for visual symmetry */
+.cs_footer_products_gfrc_group .cs_footer_subheading_flex {
+  justify-content: center;
+  text-align: center;
+}
+
+.cs_footer_products_frp_group .cs_footer_subheading_flex {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Responsive adjustments */
 @media (max-width: 1399px) {
   .cs_footer_col_products {
-    padding-left: 32px !important;
-    padding-right: 24px !important;
+    padding-left: 28px !important;
+    padding-right: 28px !important;
   }
-
-  .cs_footer_style_1 .cs_footer_col:last-child {
-    padding-left: 32px !important;
-  }
-
   .cs_footer_products_3col_wrap {
-    gap: 42px;
+    gap: 28px;
   }
-
   .cs_footer_gfrc_2col {
-    gap: 22px;
+    gap: 14px 20px;
   }
 }
 
 @media (max-width: 1199px) {
+  .cs_footer_style_1 .cs_footer_col:first-child {
+    min-width: 220px;
+    padding-right: 20px !important;
+  }
   .cs_footer_col_products {
-    padding-left: 20px !important;
-    padding-right: 15px !important;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
   }
-
   .cs_footer_style_1 .cs_footer_col:last-child {
-    padding-left: 20px !important;
+    min-width: 220px;
+    padding-left: 22px !important;
   }
-
   .cs_footer_products_3col_wrap {
-    gap: 32px;
+    gap: 20px;
   }
-
   .cs_footer_gfrc_2col {
-    gap: 18px;
+    gap: 12px 16px;
   }
-
   .cs_footer_subheading {
     font-size: 13.5px;
-    letter-spacing: 0.4px;
   }
 }
 
 @media (max-width: 991px) {
+  .cs_footer_style_1 .cs_footer_rows {
+    flex-direction: column;
+  }
   .cs_footer_style_1 .cs_footer_col:first-child,
   .cs_footer_col_products,
   .cs_footer_style_1 .cs_footer_col:last-child {
     flex: 1 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    min-width: auto;
+    padding: 40px 0 !important;
+    border-left: 0 !important;
+    border-bottom: 1px solid rgba(13, 13, 13, 0.1);
   }
-
+  .cs_footer_style_1 .cs_footer_col:last-child {
+    border-bottom: 0;
+  }
   .cs_footer_products_3col_wrap {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    flex-direction: column;
+    gap: 32px;
   }
-
+  .cs_footer_products_gfrc_group .cs_footer_subheading_flex,
+  .cs_footer_products_frp_group .cs_footer_subheading_flex {
+    justify-content: flex-start;
+    text-align: left;
+  }
   .cs_footer_gfrc_2col {
     grid-template-columns: repeat(2, max-content);
-    gap: 24px;
+    gap: 16px 32px;
   }
 }
 
 @media (max-width: 575px) {
   .cs_footer_gfrc_2col {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 14px;
   }
 }
 

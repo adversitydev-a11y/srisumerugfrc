@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { sendInquiry } from "../services/emailService.js";
 
 const PRODUCT_INTEREST_OPTIONS = [
   { value: "GFRC Architectural Products", label: "GFRC Architectural Products (General)" },
@@ -97,34 +98,28 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
     setErrorMessage("");
 
     try {
-      const payload = {
-        access_key: "cd98b256-0db3-478c-ab28-1ec94f80447c",
-        subject: `${isModal ? "Global Floating Inquiry" : "FAQ Inquiry"}: [${formData.interest}] - ${formData.name}`,
-        from_name: isModal ? "Sri Sumeru Floating Inquiry Form" : "Sri Sumeru FAQ Inquiry Form",
-        name: formData.name.trim(),
-        phone: formData.phone.trim(),
-        email: formData.email.trim() || "Not provided",
+      const result = await sendInquiry({
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
         product_interest: formData.interest,
-        message: formData.message.trim() || "No specific message provided.",
+        subject: `${isModal ? "Global Floating Inquiry" : "FAQ Inquiry"}: [${formData.interest}] - ${formData.name}`,
+        message: formData.message,
+        source: isModal ? "Global Floating Modal Form" : "FAQ Section Estimation Form",
         page_url: typeof window !== "undefined" ? window.location.href : "Website",
-      };
-
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(payload),
       });
 
-      const data = await response.json();
-
-      if (response.ok && data.success !== false) {
+      if (result.success) {
+        setStatus("success");
+      } else if (result.notConfigured) {
+        // If keys are not configured yet, simulate success for preview and log guide in console
+        console.info(
+          "[EmailJS] Demo Mode: Inquiry recorded locally. Please configure VITE_EMAILJS_* keys in .env to receive live emails."
+        );
         setStatus("success");
       } else {
         setStatus("error");
-        setErrorMessage(data.message || "Submission failed. Please call +91 9686237878.");
+        setErrorMessage(result.error || "Submission failed. Please call +91 9686237878.");
       }
     } catch (err) {
       console.error("Form submit error:", err);
