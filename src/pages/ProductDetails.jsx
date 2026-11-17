@@ -10,7 +10,7 @@ function getProductDetailsFaq(product) {
   return [
     {
       q: `WHAT ARE THE STRUCTURAL & SPECIFICATION ADVANTAGES OF ${product.title.toUpperCase()}?`,
-      a: `${product.title} is precision engineered using high-performance ${isFrp ? "fiber reinforced polymer composites with UV-stable gelcoats" : "alkali-resistant glass fiber reinforced concrete (GFRC) matrices"}, delivering superior flexural strength, high impact resistance, and zero structural rusting.`
+      a: `${product.title} is precision engineered using high-performance ${isFrp ? "fiber reinforced polymer composites with UV-stable gelcoats" : "alkali-resistant glass fiber reinforced concrete (Sri Sumeru GFRC) matrices"}, delivering superior flexural strength, high impact resistance, and zero structural rusting.`
     },
     {
       q: `HOW ARE CUSTOM SIZES, CURVES, AND ARCHITECTURAL PROFILES FABRICATED FOR THIS PRODUCT?`,
@@ -63,7 +63,7 @@ export default function ProductDetails() {
               </li>
               <li className="breadcrumb-item">
                 <Link to={product.categoryLink || "/gfrc-products"}>
-                  {product.category && product.category.includes("FRP") ? "FRP Architectural Products" : "GFRC Architectural Products"}
+                  {product.category && product.category.includes("Sri Sumeru FRP") ? "Sri Sumeru FRP Architectural Products" : "Sri Sumeru GFRC Architectural Products"}
                 </Link>
               </li>
               <li className="breadcrumb-item active">{product.title}</li>
@@ -273,7 +273,7 @@ export default function ProductDetails() {
       {/* Section 5: View Other Products (Horizontal cards) */}
       <OtherProducts currentSlug={currentSlug} />
 
-      {/* GFRC & FRP TECHNICAL KNOWLEDGE FAQ Section (5 Questions before CTA) */}
+      {/* Sri Sumeru GFRC & Sri Sumeru FRP TECHNICAL KNOWLEDGE FAQ Section (5 Questions before CTA) */}
       <TechKnowledgeFaq
         pageTitle={`${product.title.toUpperCase()} TECHNICAL KNOWLEDGE &amp; SPECIFICATIONS`}
         questions={getProductDetailsFaq(product)}

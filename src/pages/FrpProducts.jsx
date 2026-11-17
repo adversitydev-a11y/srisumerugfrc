@@ -5,24 +5,24 @@ import TechKnowledgeFaq from "../components/TechKnowledgeFaq.jsx";
 
 const frpFaqQuestions = [
   {
-    q: "WHY ARE ARCHITECTURAL FRP MOULDINGS PREFERRED FOR HIGH-LEVEL CORNICES AND CANOPIES?",
-    a: "FRP (Fiber Reinforced Polymer) is exceptionally lightweight (approx. 4–8 kg/m²), reducing cantilever loads on structural framing while facilitating fast, safe installation on high-rise rooflines."
+    q: "WHY ARE ARCHITECTURAL Sri Sumeru FRP MOULDINGS PREFERRED FOR HIGH-LEVEL CORNICES AND CANOPIES?",
+    a: "Sri Sumeru FRP (Fiber Reinforced Polymer) is exceptionally lightweight (approx. 4–8 kg/m²), reducing cantilever loads on structural framing while facilitating fast, safe installation on high-rise rooflines."
   },
   {
-    q: "WHAT IS THE WEIGHT ADVANTAGE OF FRP PANELS COMPARED TO GFRC AND NATURAL STONE?",
-    a: "FRP composite panels weigh up to 75% less than natural stone and 50% less than standard GFRC panels, making them the ideal choice for retrofitting older buildings and lightweight roof structures."
+    q: "WHAT IS THE WEIGHT ADVANTAGE OF Sri Sumeru FRP PANELS COMPARED TO Sri Sumeru GFRC AND NATURAL STONE?",
+    a: "Sri Sumeru FRP composite panels weigh up to 75% less than natural stone and 50% less than standard Sri Sumeru GFRC panels, making them the ideal choice for retrofitting older buildings and lightweight roof structures."
   },
   {
-    q: "HOW DO SRI SUMERU FRP PRODUCTS RESIST UV DEGRADATION AND CHEMICAL CORROSION?",
-    a: "Our FRP products are formulated with premium isophthalic resins and UV-stabilized gel coats that prevent chalking, yellowing, water ingress, and atmospheric corrosion even in marine environments."
+    q: "HOW DO SRI SUMERU Sri Sumeru FRP PRODUCTS RESIST UV DEGRADATION AND CHEMICAL CORROSION?",
+    a: "Our Sri Sumeru FRP products are formulated with premium isophthalic resins and UV-stabilized gel coats that prevent chalking, yellowing, water ingress, and atmospheric corrosion even in marine environments."
   },
   {
-    q: "CAN FRP ELEMENTS BE MANUFACTURED WITH FIRE-RETARDANT RESIN SYSTEMS?",
+    q: "CAN Sri Sumeru FRP ELEMENTS BE MANUFACTURED WITH FIRE-RETARDANT RESIN SYSTEMS?",
     a: "Yes, we formulate fire-retardant (FR) resin composites incorporating alumina trihydrate (ATH) fillers to achieve Class 1 / Class A flame-spread ratings according to ASTM E84 standards."
   },
   {
-    q: "WHAT SURFACE FINISHES AND PAINT SYSTEMS ARE APPLIED TO ARCHITECTURAL FRP PRODUCTS?",
-    a: "FRP elements can receive molded-in gelcoat colors, automotive-grade polyurethane (PU) topcoats, textured stone-effect finishes, or metallic patinas matching any architectural palette."
+    q: "WHAT SURFACE FINISHES AND PAINT SYSTEMS ARE APPLIED TO ARCHITECTURAL Sri Sumeru FRP PRODUCTS?",
+    a: "Sri Sumeru FRP elements can receive molded-in gelcoat colors, automotive-grade polyurethane (PU) topcoats, textured stone-effect finishes, or metallic patinas matching any architectural palette."
   }
 ];
 
@@ -48,13 +48,13 @@ export default function FrpProducts() {
         <div className="container">
           <div className="cs_page_header_content text-center">
             <h1 className="cs_page_header_title cs_fs_80 cs_bold cs_white_color cs_mb_16">
-              FRP ARCHITECTURAL PRODUCTS
+              Sri Sumeru FRP ARCHITECTURAL PRODUCTS
             </h1>
             <ol className="breadcrumb cs_center mb-0">
               <li className="breadcrumb-item">
                 <Link to="/" aria-label="Back to home">Home</Link>
               </li>
-              <li className="breadcrumb-item active">FRP Architectural Products</li>
+              <li className="breadcrumb-item active">Sri Sumeru FRP Architectural Products</li>
             </ol>
           </div>
         </div>
@@ -64,11 +64,11 @@ export default function FrpProducts() {
       <div className="cs_horizontal_slider cs_type_1 cs_accent_bg cs_primary_font">
         <div className="cs_slider_inner">
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>FRP CORNICES</span>
+            <span>Sri Sumeru FRP CORNICES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FRP DOME WORK</span>
+            <span>Sri Sumeru FRP DOME WORK</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FRP PLANTER BOXES</span>
+            <span>Sri Sumeru FRP PLANTER BOXES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FEATHERLIGHT CANTILEVERS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
@@ -78,11 +78,11 @@ export default function FrpProducts() {
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
           </div>
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>FRP CORNICES</span>
+            <span>Sri Sumeru FRP CORNICES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FRP DOME WORK</span>
+            <span>Sri Sumeru FRP DOME WORK</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FRP PLANTER BOXES</span>
+            <span>Sri Sumeru FRP PLANTER BOXES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FEATHERLIGHT CANTILEVERS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
@@ -103,12 +103,12 @@ export default function FrpProducts() {
             <div className="cs_prod_catalog_eyebrow cs_center">
               <span className="cs_eyebrow_line"></span>
               <span className="cs_eyebrow_dot">•</span>
-              <span className="cs_eyebrow_text">OUR CORE FRP PRODUCT OFFERINGS</span>
+              <span className="cs_eyebrow_text">OUR CORE Sri Sumeru FRP PRODUCT OFFERINGS</span>
               <span className="cs_eyebrow_dot">•</span>
               <span className="cs_eyebrow_line"></span>
             </div>
             <h2 className="cs_prod_catalog_title text-uppercase">
-              ARCHITECTURAL FRP PRODUCT CATALOG
+              ARCHITECTURAL Sri Sumeru FRP PRODUCT CATALOG
             </h2>
           </div>
           <div className="cs_height_60 cs_height_lg_40"></div>
@@ -148,9 +148,9 @@ export default function FrpProducts() {
         <div className="cs_height_120 cs_height_lg_80"></div>
       </section>
 
-      {/* GFRC & FRP TECHNICAL KNOWLEDGE FAQ Section (5 Questions before CTA) */}
+      {/* Sri Sumeru GFRC & Sri Sumeru FRP TECHNICAL KNOWLEDGE FAQ Section (5 Questions before CTA) */}
       <TechKnowledgeFaq
-        pageTitle="FRP COMPOSITE TECHNICAL SPECIFICATIONS &amp; DURABILITY"
+        pageTitle="Sri Sumeru FRP COMPOSITE TECHNICAL SPECIFICATIONS &amp; DURABILITY"
         questions={frpFaqQuestions}
       />
     </main>

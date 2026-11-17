@@ -5,19 +5,19 @@ import TechKnowledgeFaq from "../components/TechKnowledgeFaq.jsx";
 
 const gfrcFaqQuestions = [
   {
-    q: "WHAT IS THE ADVANTAGE OF USING GFRC JALIS AND SCREENS OVER METAL OR STONE?",
-    a: "GFRC jalis provide deep relief, authentic monolithic stone texture, and zero corrosion, unlike metal jalis which can rust, or natural sandstone which is brittle and significantly heavier."
+    q: "WHAT IS THE ADVANTAGE OF USING Sri Sumeru GFRC JALIS AND SCREENS OVER METAL OR STONE?",
+    a: "Sri Sumeru GFRC jalis provide deep relief, authentic monolithic stone texture, and zero corrosion, unlike metal jalis which can rust, or natural sandstone which is brittle and significantly heavier."
   },
   {
-    q: "HOW ARE LARGE GFRC FACADE CLADDING PANELS ANCHORED TO BUILDING STRUCTURES?",
+    q: "HOW ARE LARGE Sri Sumeru GFRC FACADE CLADDING PANELS ANCHORED TO BUILDING STRUCTURES?",
     a: "Panels incorporate engineered stainless steel or galvanized steel anchor brackets embedded during casting. These mount onto sub-framing channels with adjustable slotted connections to accommodate seismic and thermal movement."
   },
   {
-    q: "CAN GFRC COLUMNS BE USED AS BOTH DECORATIVE CLADDING AND STRUCTURAL ENCASEMENTS?",
-    a: "Yes, our hollow GFRC column covers are supplied as fluted or smooth half-round segments that encase structural steel stanchions or RCC pillars, providing monumental classical aesthetics with rapid dry assembly."
+    q: "CAN Sri Sumeru GFRC COLUMNS BE USED AS BOTH DECORATIVE CLADDING AND STRUCTURAL ENCASEMENTS?",
+    a: "Yes, our hollow Sri Sumeru GFRC column covers are supplied as fluted or smooth half-round segments that encase structural steel stanchions or RCC pillars, providing monumental classical aesthetics with rapid dry assembly."
   },
   {
-    q: "HOW ARE JOINTS BETWEEN GFRC FACADE PANELS WEATHER-SEALED?",
+    q: "HOW ARE JOINTS BETWEEN Sri Sumeru GFRC FACADE PANELS WEATHER-SEALED?",
     a: "Joints typically feature 10–15mm engineered gaps backed by closed-cell polyethylene foam backer rods and sealed with high-performance neutral-cure silicone or polyurethane elastomeric sealants."
   },
   {
@@ -48,13 +48,13 @@ export default function GfrcProducts() {
         <div className="container">
           <div className="cs_page_header_content text-center">
             <h1 className="cs_page_header_title cs_fs_80 cs_bold cs_white_color cs_mb_16">
-              GFRC ARCHITECTURAL PRODUCTS
+              Sri Sumeru GFRC ARCHITECTURAL PRODUCTS
             </h1>
             <ol className="breadcrumb cs_center mb-0">
               <li className="breadcrumb-item">
                 <Link to="/" aria-label="Back to home">Home</Link>
               </li>
-              <li className="breadcrumb-item active">GFRC Architectural Products</li>
+              <li className="breadcrumb-item active">Sri Sumeru GFRC Architectural Products</li>
             </ol>
           </div>
         </div>
@@ -111,12 +111,12 @@ export default function GfrcProducts() {
             <div className="cs_prod_catalog_eyebrow cs_center">
               <span className="cs_eyebrow_line"></span>
               <span className="cs_eyebrow_dot">•</span>
-              <span className="cs_eyebrow_text">OUR CORE GFRC PRODUCT OFFERINGS</span>
+              <span className="cs_eyebrow_text">OUR CORE Sri Sumeru GFRC PRODUCT OFFERINGS</span>
               <span className="cs_eyebrow_dot">•</span>
               <span className="cs_eyebrow_line"></span>
             </div>
             <h2 className="cs_prod_catalog_title text-uppercase">
-              ARCHITECTURAL GFRC PRODUCT CATALOG
+              ARCHITECTURAL Sri Sumeru GFRC PRODUCT CATALOG
             </h2>
           </div>
           <div className="cs_height_60 cs_height_lg_40"></div>
@@ -156,9 +156,9 @@ export default function GfrcProducts() {
         <div className="cs_height_120 cs_height_lg_80"></div>
       </section>
 
-      {/* GFRC TECHNICAL KNOWLEDGE FAQ Section (5 Questions before CTA) */}
+      {/* Sri Sumeru GFRC TECHNICAL KNOWLEDGE FAQ Section (5 Questions before CTA) */}
       <TechKnowledgeFaq
-        pageTitle="TECHNICAL SPECIFICATIONS FOR GFRC PRODUCTS"
+        pageTitle="TECHNICAL SPECIFICATIONS FOR Sri Sumeru GFRC PRODUCTS"
         questions={gfrcFaqQuestions}
       />
     </main>

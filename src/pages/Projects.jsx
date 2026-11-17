@@ -4,7 +4,7 @@ import HtmlBlock from "../components/HtmlBlock.jsx";
 
 export default function Projects() {
   useEffect(() => {
-    document.title = "GFRC Projects Portfolio & Case Studies | SRI SUMERU";
+    document.title = "Sri Sumeru GFRC Projects Portfolio & Case Studies | SRI SUMERU";
     window.scrollTo(0, 0);
   }, []);
 
