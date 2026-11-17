@@ -16,11 +16,7 @@ const targets = [
   { file: 'content/siteContent.js',   type: 'json', path: ['blocks', 'hero', 'title'] },
   { file: 'content/siteContent.js',   type: 'json', path: ['footer', 'brandAlt'] },
 
-  // JSX pages – main <h2> heading on each top‑level page
-  { file: 'pages/Home.jsx',          type: 'jsx',  regex: /(<h2[^>]*>)([^<]*?)(<\/h2>)/i, replace: `$1Sri Sumeru GFRC & FRP$3` },
-  { file: 'pages/FrpProducts.jsx',   type: 'jsx',  regex: /(<h2[^>]*>)([^<]*?)(<\/h2>)/i, replace: `$1Sri Sumeru GFRC & FRP$3` },
-  { file: 'pages/GfrcProducts.jsx',  type: 'jsx',  regex: /(<h2[^>]*>)([^<]*?)(<\/h2>)/i, replace: `$1Sri Sumeru GFRC & FRP$3` },
-  { file: 'pages/About.jsx',          type: 'jsx',  regex: /(<h2[^>]*>)([^<]*?)(<\/h2>)/i, replace: `$1Sri Sumeru GFRC & FRP$3` },
+
 ];
 
 // ------------------------------------------------------------------
@@ -57,9 +53,15 @@ function setByPath(obj, pathArray, newValue) {
       if (parent && typeof parent[leafKey] === 'string') {
         const original = parent[leafKey];
         const updated = original
-          .replace(/GFRC\s*&\s*FRP/g, 'Sri Sumeru GFRC & FRP')
-          .replace(/(?<!Sri Sumeru )GFRC/g, 'Sri Sumeru GFRC')
-          .replace(/(?<!Sri Sumeru )FRP/g, 'Sri Sumeru FRP');
+          .replace(/(?:Sri\s+Sumeru\s+)?GFRC\s*(?:&|and)\s*(?:Sri\s+Sumeru\s+)?FRP(?:\s+PRODUCTS)?/gi, (match) => {
+            if (/products$/i.test(match)) {
+              if (match === match.toUpperCase()) return 'SRI SUMERU GFRC & FRP PRODUCTS';
+              if (/Products$/.test(match)) return 'Sri Sumeru GFRC & FRP Products';
+              return 'Sri Sumeru GFRC & FRP products';
+            }
+            if (match === match.toUpperCase()) return 'SRI SUMERU GFRC & FRP';
+            return 'Sri Sumeru GFRC & FRP';
+          });
         if (updated !== original) {
           parent[leafKey] = updated;
           // Serialize back to a JS file preserving the original export name

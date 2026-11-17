@@ -1,5 +1,5 @@
 /**
- * Centralized Projects Data Source for Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP
+ * Centralized Projects Data Source for Sri Sumeru GFRC & FRP
  */
 
 export const projectsData = {
@@ -35,12 +35,12 @@ export const projectsData = {
     sidebar: {
       material: "Architectural ornamental elements",
       scope: "Ornamental architectural features",
-      company: "SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP"
+      company: "Sri Sumeru GFRC & FRP"
     },
     seo: {
-      title: "Secretariat Office Project | Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP",
+      title: "Secretariat Office Project | Sri Sumeru GFRC & FRP",
       description: "Explore the Secretariat Office architectural project featuring an ornamental domed pavilion, decorative columns, and refined architectural detailing.",
-      keywords: "Secretariat Office, Ornamental Pavilion, Domed Roof, Decorative Columns, Architectural Features, Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP"
+      keywords: "Secretariat Office, Ornamental Pavilion, Domed Roof, Decorative Columns, Architectural Features, Sri Sumeru GFRC & FRP"
     }
   },
   "basava-hall": {
@@ -84,12 +84,12 @@ export const projectsData = {
     sidebar: {
       material: "Architectural detailing elements",
       scope: "Architectural detailing and decorative elements",
-      company: "SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP"
+      company: "Sri Sumeru GFRC & FRP"
     },
     seo: {
-      title: "Basava Hall Architectural Project | Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP",
+      title: "Basava Hall Architectural Project | Sri Sumeru GFRC & FRP",
       description: "Explore Basava Hall, featuring traditional architectural detailing, decorative columns, refined roof elements, and a welcoming veranda design.",
-      keywords: "Basava Hall, Institutional Architecture, Traditional Detailing, Decorative Columns, Veranda Design, Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP"
+      keywords: "Basava Hall, Institutional Architecture, Traditional Detailing, Decorative Columns, Veranda Design, Sri Sumeru GFRC & FRP"
     }
   },
   "kaivalya": {
@@ -133,12 +133,12 @@ export const projectsData = {
     sidebar: {
       material: "Architectural ornamental elements",
       scope: "Ornamental architectural detailing and exterior finishes",
-      company: "SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP"
+      company: "Sri Sumeru GFRC & FRP"
     },
     seo: {
-      title: "Kaivalya Architectural Project | Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP",
+      title: "Kaivalya Architectural Project | Sri Sumeru GFRC & FRP",
       description: "Explore Kaivalya, featuring ornate architectural detailing, decorative columns, refined exterior finishes, and elegant traditional-inspired design.",
-      keywords: "Kaivalya, Residential Architecture, Ornamental Detailing, Decorative Columns, Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP"
+      keywords: "Kaivalya, Residential Architecture, Ornamental Detailing, Decorative Columns, Sri Sumeru GFRC & FRP"
     }
   },
   "harivishram": {
@@ -182,12 +182,12 @@ export const projectsData = {
     sidebar: {
       material: "Architectural façade elements",
       scope: "Residential façade and architectural detailing",
-      company: "SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP"
+      company: "Sri Sumeru GFRC & FRP"
     },
     seo: {
-      title: "Harivishram Residential Project | Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP",
+      title: "Harivishram Residential Project | Sri Sumeru GFRC & FRP",
       description: "Explore the Harivishram residential project featuring contemporary apartment architecture, vertical façade detailing, coordinated balconies, and refined exterior finishes.",
-      keywords: "Harivishram, Residential Architecture, Contemporary Apartment Facade, Balcony Detailing, Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP"
+      keywords: "Harivishram, Residential Architecture, Contemporary Apartment Facade, Balcony Detailing, Sri Sumeru GFRC & FRP"
     }
   },
   "bougainville": {
@@ -231,12 +231,12 @@ export const projectsData = {
     sidebar: {
       material: "Architectural decorative elements",
       scope: "Decorative arches, columns & architectural detailing",
-      company: "SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP"
+      company: "Sri Sumeru GFRC & FRP"
     },
     seo: {
-      title: "Bougainville Architectural Project | Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP",
+      title: "Bougainville Architectural Project | Sri Sumeru GFRC & FRP",
       description: "Explore the Bougainville architectural project featuring decorative arches, classical columns, ornamental mouldings, and refined exterior detailing.",
-      keywords: "Bougainville, Residential Architecture, Decorative Facade, Classical Columns, Ornamental Arches, Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP"
+      keywords: "Bougainville, Residential Architecture, Decorative Facade, Classical Columns, Ornamental Arches, Sri Sumeru GFRC & FRP"
     }
   },
   "jst-param": {
@@ -280,12 +280,12 @@ export const projectsData = {
     sidebar: {
       material: "Commercial façade cladding elements",
       scope: "Commercial façade & architectural cladding",
-      company: "SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP"
+      company: "Sri Sumeru GFRC & FRP"
     },
     seo: {
-      title: "JST Param Ongoing Project | Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP",
+      title: "JST Param Ongoing Project | Sri Sumeru GFRC & FRP",
       description: "Explore JST Param's ongoing contemporary high-rise façade project, featuring expansive glazed elevations, vertical accents, and coordinated exterior finishes.",
-      keywords: "JST Param, High-Rise Facade, Commercial Architecture, Facade Cladding, Blue Glass Elevation, Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP"
+      keywords: "JST Param, High-Rise Facade, Commercial Architecture, Facade Cladding, Blue Glass Elevation, Sri Sumeru GFRC & FRP"
     }
   },
   "purva-aerocity": {
@@ -329,12 +329,12 @@ export const projectsData = {
     sidebar: {
       material: "Commercial façade elements",
       scope: "Commercial façade & architectural detailing",
-      company: "SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP"
+      company: "Sri Sumeru GFRC & FRP"
     },
     seo: {
-      title: "Purva Aerocity Commercial Project | Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP",
+      title: "Purva Aerocity Commercial Project | Sri Sumeru GFRC & FRP",
       description: "Explore Purva Aerocity's contemporary commercial architecture, featuring glazed elevations, distinctive façade detailing, and coordinated exterior finishes.",
-      keywords: "Purva Aerocity, Commercial Architecture, Facade Detailing, Glazed Elevations, Modern Office Building, Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP"
+      keywords: "Purva Aerocity, Commercial Architecture, Facade Detailing, Glazed Elevations, Modern Office Building, Sri Sumeru GFRC & FRP"
     }
   },
   "dhyan-mandir": {
@@ -378,12 +378,12 @@ export const projectsData = {
     sidebar: {
       material: "Architectural decorative elements",
       scope: "Ornamental entrance, columns & architectural detailing",
-      company: "SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP"
+      company: "Sri Sumeru GFRC & FRP"
     },
     seo: {
-      title: "Dhyan Mandir Architectural Project | Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP",
+      title: "Dhyan Mandir Architectural Project | Sri Sumeru GFRC & FRP",
       description: "Explore the Dhyan Mandir architectural project, featuring ornate entrance detailing, decorative columns, domes, and a refined architectural composition.",
-      keywords: "Dhyan Mandir, Temple Architecture, Ornamental Domes, Decorative Columns, Classical Cornices, Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP"
+      keywords: "Dhyan Mandir, Temple Architecture, Ornamental Domes, Decorative Columns, Classical Cornices, Sri Sumeru GFRC & FRP"
     }
   },
   "shankara": {
@@ -427,12 +427,12 @@ export const projectsData = {
     sidebar: {
       material: "Architectural façade elements",
       scope: "Residential façade & decorative architectural detailing",
-      company: "SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP"
+      company: "Sri Sumeru GFRC & FRP"
     },
     seo: {
-      title: "Shankara Residential Project | Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP",
+      title: "Shankara Residential Project | Sri Sumeru GFRC & FRP",
       description: "Explore the Shankara residential apartment project, featuring coordinated architectural detailing, decorative balcony profiles, and a refined exterior design.",
-      keywords: "Shankara Residential Apartment Complex, Sri Sumeru GFRC Residential Facade, Architectural Detailing, Balcony Profiles, Window Surrounds, Sri Sumeru Sri Sumeru GFRC & Sri Sumeru FRP"
+      keywords: "Shankara Residential Apartment Complex, Sri Sumeru GFRC Residential Facade, Architectural Detailing, Balcony Profiles, Window Surrounds, Sri Sumeru GFRC & FRP"
     }
   }
 };
@@ -549,7 +549,7 @@ export function getProjectHtml(project) {
           <img src="/assets/img/star-shape.svg" alt="Star shape">
           <span>PRECISION 3D MOULD ENGINEERING</span>
           <img src="/assets/img/star-shape.svg" alt="Star shape">
-          <span>SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP</span>
+          <span>Sri Sumeru GFRC & FRP</span>
           <img src="/assets/img/star-shape.svg" alt="Star shape">
         </div>
         <div class="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
@@ -559,7 +559,7 @@ export function getProjectHtml(project) {
           <img src="/assets/img/star-shape.svg" alt="Star shape">
           <span>PRECISION 3D MOULD ENGINEERING</span>
           <img src="/assets/img/star-shape.svg" alt="Star shape">
-          <span>SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP</span>
+          <span>Sri Sumeru GFRC & FRP</span>
           <img src="/assets/img/star-shape.svg" alt="Star shape">
         </div>
       </div>

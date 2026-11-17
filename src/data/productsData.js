@@ -8,7 +8,7 @@ export const productsData = {
     categoryLink: "/frp-products",
     title: "Sri Sumeru FRP Architectural Cornices",
     subtitle: "Sri Sumeru FRP Manufacturer Bangalore | Sri Sumeru FRP Mouldings & Architectural Cornices",
-    desc: "As an expert Sri Sumeru FRP products manufacturer and fiber reinforced plastic manufacturer, SRI SUMERU Sri Sumeru GFRC & Sri Sumeru FRP delivers high-performance Sri Sumeru FRP mouldings, Sri Sumeru FRP columns and cornices, and custom Sri Sumeru FRP products designed for extreme cantilever lightness and weather immunity.",
+    desc: "As an expert Sri Sumeru FRP products manufacturer and fiber reinforced plastic manufacturer, Sri Sumeru GFRC & FRP delivers high-performance Sri Sumeru FRP mouldings, Sri Sumeru FRP columns and cornices, and custom Sri Sumeru FRP products designed for extreme cantilever lightness and weather immunity.",
     heroImg: "/assets/categories/frp/cornices/CR-01.png",
     overviewTitle: "Crisp Architectural Mouldings with Featherlight Cantilever Safety",
     overviewDesc1: "Sri Sumeru FRP Cornices eliminate heavy cantilever structural stresses associated with conventional concrete. Factory-moulded with precision profiles, they deliver razor-sharp shadow lines and flawless alignment across long spans.",

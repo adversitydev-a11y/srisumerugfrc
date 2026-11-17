@@ -273,7 +273,7 @@ export default function ProductDetails() {
       {/* Section 5: View Other Products (Horizontal cards) */}
       <OtherProducts currentSlug={currentSlug} />
 
-      {/* Sri Sumeru GFRC & Sri Sumeru FRP TECHNICAL KNOWLEDGE FAQ Section (5 Questions before CTA) */}
+      {/* Sri Sumeru GFRC & FRP TECHNICAL KNOWLEDGE FAQ Section (5 Questions before CTA) */}
       <TechKnowledgeFaq
         pageTitle={`${product.title.toUpperCase()} TECHNICAL KNOWLEDGE &amp; SPECIFICATIONS`}
         questions={getProductDetailsFaq(product)}

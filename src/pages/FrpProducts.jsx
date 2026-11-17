@@ -13,7 +13,7 @@ const frpFaqQuestions = [
     a: "Sri Sumeru FRP composite panels weigh up to 75% less than natural stone and 50% less than standard Sri Sumeru GFRC panels, making them the ideal choice for retrofitting older buildings and lightweight roof structures."
   },
   {
-    q: "HOW DO SRI SUMERU Sri Sumeru FRP PRODUCTS RESIST UV DEGRADATION AND CHEMICAL CORROSION?",
+    q: "HOW DO SRI SUMERU FRP PRODUCTS RESIST UV DEGRADATION AND CHEMICAL CORROSION?",
     a: "Our Sri Sumeru FRP products are formulated with premium isophthalic resins and UV-stabilized gel coats that prevent chalking, yellowing, water ingress, and atmospheric corrosion even in marine environments."
   },
   {
@@ -148,7 +148,7 @@ export default function FrpProducts() {
         <div className="cs_height_120 cs_height_lg_80"></div>
       </section>
 
-      {/* Sri Sumeru GFRC & Sri Sumeru FRP TECHNICAL KNOWLEDGE FAQ Section (5 Questions before CTA) */}
+      {/* Sri Sumeru GFRC & FRP TECHNICAL KNOWLEDGE FAQ Section (5 Questions before CTA) */}
       <TechKnowledgeFaq
         pageTitle="Sri Sumeru FRP COMPOSITE TECHNICAL SPECIFICATIONS &amp; DURABILITY"
         questions={frpFaqQuestions}
