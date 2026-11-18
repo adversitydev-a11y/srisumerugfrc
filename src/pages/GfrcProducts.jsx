@@ -48,13 +48,13 @@ export default function GfrcProducts() {
         <div className="container">
           <div className="cs_page_header_content text-center">
             <h1 className="cs_page_header_title cs_fs_80 cs_bold cs_white_color cs_mb_16">
-              Sri Sumeru GFRC ARCHITECTURAL PRODUCTS
+              GFRC ARCHITECTURAL PRODUCTS
             </h1>
             <ol className="breadcrumb cs_center mb-0">
               <li className="breadcrumb-item">
                 <Link to="/" aria-label="Back to home">Home</Link>
               </li>
-              <li className="breadcrumb-item active">Sri Sumeru GFRC Architectural Products</li>
+              <li className="breadcrumb-item active">GFRC Architectural Products</li>
             </ol>
           </div>
         </div>
@@ -111,12 +111,12 @@ export default function GfrcProducts() {
             <div className="cs_prod_catalog_eyebrow cs_center">
               <span className="cs_eyebrow_line"></span>
               <span className="cs_eyebrow_dot">•</span>
-              <span className="cs_eyebrow_text">OUR CORE Sri Sumeru GFRC PRODUCT OFFERINGS</span>
+              <span className="cs_eyebrow_text">OUR CORE GFRC PRODUCT OFFERINGS</span>
               <span className="cs_eyebrow_dot">•</span>
               <span className="cs_eyebrow_line"></span>
             </div>
             <h2 className="cs_prod_catalog_title text-uppercase">
-              ARCHITECTURAL Sri Sumeru GFRC PRODUCT CATALOG
+              ARCHITECTURAL GFRC PRODUCT CATALOG
             </h2>
           </div>
           <div className="cs_height_60 cs_height_lg_40"></div>

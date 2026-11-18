@@ -63,7 +63,7 @@ export default function ProductDetails() {
               </li>
               <li className="breadcrumb-item">
                 <Link to={product.categoryLink || "/gfrc-products"}>
-                  {product.category && product.category.includes("Sri Sumeru FRP") ? "Sri Sumeru FRP Architectural Products" : "Sri Sumeru GFRC Architectural Products"}
+                  {product.category && product.category.includes("FRP") ? "FRP Architectural Products" : "GFRC Architectural Products"}
                 </Link>
               </li>
               <li className="breadcrumb-item active">{product.title}</li>

@@ -48,13 +48,13 @@ export default function FrpProducts() {
         <div className="container">
           <div className="cs_page_header_content text-center">
             <h1 className="cs_page_header_title cs_fs_80 cs_bold cs_white_color cs_mb_16">
-              Sri Sumeru FRP ARCHITECTURAL PRODUCTS
+              FRP ARCHITECTURAL PRODUCTS
             </h1>
             <ol className="breadcrumb cs_center mb-0">
               <li className="breadcrumb-item">
                 <Link to="/" aria-label="Back to home">Home</Link>
               </li>
-              <li className="breadcrumb-item active">Sri Sumeru FRP Architectural Products</li>
+              <li className="breadcrumb-item active">FRP Architectural Products</li>
             </ol>
           </div>
         </div>
@@ -64,11 +64,11 @@ export default function FrpProducts() {
       <div className="cs_horizontal_slider cs_type_1 cs_accent_bg cs_primary_font">
         <div className="cs_slider_inner">
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>Sri Sumeru FRP CORNICES</span>
+            <span>FRP CORNICES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>Sri Sumeru FRP DOME WORK</span>
+            <span>FRP DOME WORK</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>Sri Sumeru FRP PLANTER BOXES</span>
+            <span>FRP PLANTER BOXES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FEATHERLIGHT CANTILEVERS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
@@ -78,11 +78,11 @@ export default function FrpProducts() {
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
           </div>
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>Sri Sumeru FRP CORNICES</span>
+            <span>FRP CORNICES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>Sri Sumeru FRP DOME WORK</span>
+            <span>FRP DOME WORK</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>Sri Sumeru FRP PLANTER BOXES</span>
+            <span>FRP PLANTER BOXES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FEATHERLIGHT CANTILEVERS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
@@ -103,12 +103,12 @@ export default function FrpProducts() {
             <div className="cs_prod_catalog_eyebrow cs_center">
               <span className="cs_eyebrow_line"></span>
               <span className="cs_eyebrow_dot">•</span>
-              <span className="cs_eyebrow_text">OUR CORE Sri Sumeru FRP PRODUCT OFFERINGS</span>
+              <span className="cs_eyebrow_text">OUR CORE FRP PRODUCT OFFERINGS</span>
               <span className="cs_eyebrow_dot">•</span>
               <span className="cs_eyebrow_line"></span>
             </div>
             <h2 className="cs_prod_catalog_title text-uppercase">
-              ARCHITECTURAL Sri Sumeru FRP PRODUCT CATALOG
+              ARCHITECTURAL FRP PRODUCT CATALOG
             </h2>
           </div>
           <div className="cs_height_60 cs_height_lg_40"></div>
