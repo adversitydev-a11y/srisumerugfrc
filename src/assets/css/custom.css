@@ -4515,9 +4515,9 @@ button.cs_faq_submit_btn.cs_btn_style_1:disabled {
    6. Global Floating Icons (Separate WhatsApp & Corner Leads Form)
 ================================================================= */
 
-/* Reposition Scroll-To-Top button neatly above the two floating buttons */
+/* Reposition Scroll-To-Top button neatly above the floating dock */
 .cs_scrollup_btn {
-  bottom: 157px !important;
+  bottom: 225px !important;
   right: 28px !important;
   width: 48px !important;
   height: 48px !important;
@@ -4527,7 +4527,7 @@ button.cs_faq_submit_btn.cs_btn_style_1:disabled {
 
 @media (max-width: 767px) {
   .cs_scrollup_btn {
-    bottom: 140px !important;
+    bottom: 198px !important;
     right: 22px !important;
     width: 42px !important;
     height: 42px !important;
@@ -4575,7 +4575,84 @@ button.cs_faq_submit_btn.cs_btn_style_1:disabled {
   gap: 10px;
 }
 
-/* 1. SEPARATE WHATSAPP BUTTON */
+/* 1. SEPARATE CALL BUTTON */
+.cs_floating_call_btn {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff !important;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 8px 22px rgba(2, 132, 199, 0.45), 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+  text-decoration: none;
+}
+
+.cs_floating_call_btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 28px rgba(2, 132, 199, 0.6), 0 4px 10px rgba(0, 0, 0, 0.25);
+  color: #ffffff !important;
+}
+
+.cs_floating_call_btn i {
+  animation: cs_phone_shake 3.5s infinite ease-in-out;
+}
+
+@keyframes cs_phone_shake {
+  0%, 75%, 100% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-15deg);
+  }
+  85% {
+    transform: rotate(15deg);
+  }
+  90% {
+    transform: rotate(-10deg);
+  }
+  95% {
+    transform: rotate(10deg);
+  }
+}
+
+.cs_call_tooltip {
+  border-color: rgba(2, 132, 199, 0.5) !important;
+}
+
+.cs_floating_call_ripple {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid rgba(2, 132, 199, 0.65);
+  animation: cs_call_ripple 2.2s infinite ease-out;
+  pointer-events: none;
+}
+
+@keyframes cs_call_ripple {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* 2. SEPARATE WHATSAPP BUTTON */
 .cs_floating_wa_btn {
   width: 54px;
   height: 54px;
@@ -4788,6 +4865,11 @@ button.cs_faq_submit_btn.cs_btn_style_1:disabled {
   .cs_floating_lead_badge,
   .cs_floating_dock_tooltip {
     display: none;
+  }
+  .cs_floating_call_btn {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
   }
   .cs_floating_wa_btn {
     width: 48px;

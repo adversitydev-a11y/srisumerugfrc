@@ -77,7 +77,23 @@ export default function FloatingLeadWidget() {
         className={`cs_floating_dock${isVisible || isOpen ? " cs_floating_dock_visible" : ""}`}
         id="global-floating-dock"
       >
-        {/* 1. SEPARATE WHATSAPP FLOATING BUTTON */}
+        {/* 1. SEPARATE CALL FLOATING BUTTON */}
+        <div className="cs_floating_dock_item">
+          <span className="cs_floating_dock_tooltip cs_call_tooltip" aria-hidden="true">
+            Call +91 9686237878
+          </span>
+          <a
+            href="tel:+919686237878"
+            className="cs_floating_call_btn"
+            aria-label="Direct Phone Call with Factory: +91 9686237878"
+            title="Call +91 9686237878"
+          >
+            <i className="fa-solid fa-phone"></i>
+            <span className="cs_floating_call_ripple" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        {/* 2. SEPARATE WHATSAPP FLOATING BUTTON */}
         <div className="cs_floating_dock_item">
           <span className="cs_floating_dock_tooltip" aria-hidden="true">
             WhatsApp Chat
@@ -95,7 +111,7 @@ export default function FloatingLeadWidget() {
           </a>
         </div>
 
-        {/* 2. SEPARATE LEADS FORM FLOATING BUTTON (Strictly underneath WhatsApp) */}
+        {/* 3. SEPARATE LEADS FORM FLOATING BUTTON (Strictly underneath WhatsApp) */}
         <div className="cs_floating_dock_item">
           {!isOpen && (
             <button
