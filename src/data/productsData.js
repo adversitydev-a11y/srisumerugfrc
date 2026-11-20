@@ -483,6 +483,306 @@ export const productsData = {
   // ==========================================
   // BACKWARDS COMPATIBILITY & URL ALIASES
   // ==========================================
+
+  // ==========================================
+  // Additional Sri Sumeru FRP Architectural Offerings (Shuffled & Tailored)
+  // ==========================================
+  "frp-column-works": {
+    id: "frp-column-works",
+    category: "Sri Sumeru FRP ARCHITECTURAL PRODUCTS",
+    categoryLink: "/frp-products",
+    title: "FRP Column Works",
+    subtitle: "Lightweight Monolithic Column Encasements & Fluted Classical Pillars",
+    desc: "Engineered from high-impact composite polymer matrices, our Sri Sumeru FRP column covers and hollow pillar encasements deliver classical fluted and smooth monumental aesthetics with up to 80% weight reduction compared to solid stone, enabling rapid dry installation around structural steel or RCC shafts.",
+    heroImg: "/assets/categories/gfrc/column-works/CW-02.png",
+    overviewTitle: "Monumental Classical Columns with Featherlight Rigging Safety",
+    overviewDesc1: "Sri Sumeru FRP column covers are manufactured in interlocking semi-circular or modular segmented shells that dry-encase existing steel stanchions or concrete pillars with zero wet-masonry mess.",
+    overviewDesc2: "Finished with automotive-grade UV gelcoats or textured stone-effect patinas for lifetime resistance against monsoon moisture, cracking, and surface discoloration.",
+    overviewImg: "/assets/categories/gfrc/column-works/CW-03.png",
+    badges: [
+      { type: "layers", label: "Hollow Fast\nEncasement" },
+      { type: "grid", label: "80% Lighter\nThan Stone" },
+      { type: "building", label: "Zero Spalling\nOr Rust" }
+    ],
+    advantages: [
+      { num: "01", title: "Dry Mechanical Encasement", desc: "Two-piece interlocking half-round shells assemble rapidly around structural steel or RCC columns." },
+      { num: "02", title: "Drastic Load Reduction", desc: "Weighing only 6-10 kg/m², they eliminate dead-weight concerns on suspended slabs and porticos." },
+      { num: "03", title: "Integrated Capitals & Bases", desc: "Supplied complete with Corinthian, Ionic, or Doric fluted capitals and profiled plinth bases." },
+      { num: "04", title: "All-Weather Durability", desc: "Non-corrosive composite resin matrix provides lifelong immunity to water seepage and coastal humidity." }
+    ],
+    applications: [
+      "Grand Portico & Porch Colonnades",
+      "Steel Stanchion Decorative Encasements",
+      "Commercial Atrium Features",
+      "Luxury Villa Verandahs",
+      "Heritage Banquet Entrance Facades"
+    ],
+    ctaTitle: "Looking for FRP Column Works?",
+    ctaDesc: "Share your height, shaft diameter, and capital specifications with our engineering team for custom FRP column encasement drawings.",
+    footerSubtitle: "START YOUR PROJECT",
+    footerTitle: "Need Custom FRP Column Works?",
+    footerDesc: "Share your design ideas, dimensions, or drawings with us. Our team will review your project and guide you with the best composite solutions.",
+    gallery: [
+      { code: "FRP-CW-01", src: "/assets/categories/gfrc/column-works/CW-02.png", title: "Fluted Composite Classical Column", alt: "Fluted Composite Classical Column" },
+      { code: "FRP-CW-02", src: "/assets/categories/gfrc/column-works/CW-03.png", title: "Smooth Round Column Shell Encasement", alt: "Smooth Round Column Shell Encasement" },
+      { code: "FRP-CW-03", src: "/assets/categories/gfrc/column-works/CW-04.png", title: "Monumental Capital & Shaft Assembly", alt: "Monumental Capital & Shaft Assembly" },
+      { code: "FRP-CW-04", src: "/assets/categories/gfrc/column-works/CW-05.png", title: "Twin Colonnade Entrance Portico", alt: "Twin Colonnade Entrance Portico" }
+    ]
+  },
+
+  "frp-facade-works": {
+    id: "frp-facade-works",
+    category: "Sri Sumeru FRP ARCHITECTURAL PRODUCTS",
+    categoryLink: "/frp-products",
+    title: "FRP Facade Works",
+    subtitle: "High-Elevation Lightweight Exterior Cladding & Architectural 3D Panels",
+    desc: "Sri Sumeru FRP facade panels provide futuristic geometric 3D relief, sweeping double-curved forms, and monolithic exterior cladding with featherlight structural efficiency, making them the ultimate choice for high-rise elevations, retrofit over-cladding, and iconic corporate towers.",
+    heroImg: "/assets/categories/gfrc/facade-works/FW-02.png",
+    overviewTitle: "Sculptural Double-Curved Facades with Extreme Wind-Load Safety",
+    overviewDesc1: "Our FRP composite facade panels realize complex geometric envelopes and fluid curvilinear contours that would be cost-prohibitive or structurally too heavy in traditional precast concrete.",
+    overviewDesc2: "Engineered with integrated stiffening ribs and corrosion-proof bracket receivers, ensuring robust seismic and wind resistance even at extreme building elevations.",
+    overviewImg: "/assets/categories/gfrc/facade-works/FW-03.png",
+    badges: [
+      { type: "layers", label: "Double-Curved\nGeometry" },
+      { type: "grid", label: "Featherlight\nHigh-Rise Safety" },
+      { type: "building", label: "Class A Fire\nRated Resin" }
+    ],
+    advantages: [
+      { num: "01", title: "High Strength-to-Weight", desc: "Up to 70% lighter than natural stone and concrete cladding, minimizing cantilever substructure steel." },
+      { num: "02", title: "Fluid 3D Curves", desc: "Molded seamlessly into complex parametric waves, origami folds, and double-curved architectural envelopes." },
+      { num: "03", title: "Color & Finish Versatility", desc: "Available in automotive PU topcoats, high-gloss metallics, textured stone patinas, and solid gelcoat shades." },
+      { num: "04", title: "Rapid High-Altitude Rigging", desc: "Large format panels hoist swiftly using lightweight floor cranes, speeding project commissioning." }
+    ],
+    applications: [
+      "Commercial Tower Crowns & Facades",
+      "Modern Retrofit Building Modernization",
+      "Double-Curved Sculptural Feature Walls",
+      "Airport & Transit Terminal Envelopes",
+      "Hospitality & Resort Signature Elevations"
+    ],
+    ctaTitle: "Looking for FRP Facade Works?",
+    ctaDesc: "Consult with our facade engineering desk for composite panel thickness calculations, substructure layouts, and wind-load engineering.",
+    footerSubtitle: "START YOUR PROJECT",
+    footerTitle: "Need Custom FRP Facade Works?",
+    footerDesc: "Share your facade CAD elevations or 3D models with us to receive comprehensive engineering consultation and itemized BOQ estimates.",
+    gallery: [
+      { code: "FRP-FW-01", src: "/assets/categories/gfrc/facade-works/FW-02.png", title: "Precision Modular Composite Cladding", alt: "Precision Modular Composite Cladding" },
+      { code: "FRP-FW-02", src: "/assets/categories/gfrc/facade-works/FW-03.png", title: "Parametric Sculptural Facade Envelope", alt: "Parametric Sculptural Facade Envelope" },
+      { code: "FRP-FW-03", src: "/assets/categories/gfrc/facade-works/FW-04.png", title: "Commercial High-Rise Elevation Panels", alt: "Commercial High-Rise Elevation Panels" }
+    ]
+  },
+
+  "frp-jhali-works": {
+    id: "frp-jhali-works",
+    category: "Sri Sumeru FRP ARCHITECTURAL PRODUCTS",
+    categoryLink: "/frp-products",
+    title: "FRP Jhali Works",
+    subtitle: "Precision Perforated Composite Screens & Lightweight Solar Shading Lattices",
+    desc: "Sri Sumeru FRP decorative jhalis deliver sharp filigree latticework and intricate geometric solar shading screens that are 100% moisture-immune and rust-free, making them ideal for high-humidity coastal zones, rooftop pergolas, and exterior balcony solar screens.",
+    heroImg: "/assets/categories/gfrc/jhali-works/JH-02.png",
+    overviewTitle: "Exquisite Perforated Screens with Zero Rust and Featherlight Rigging",
+    overviewDesc1: "Molded from precision master tooling, our FRP jhalis produce flawless multi-depth perforations without the edge brittleness of natural sandstone or the corrosion vulnerability of iron and mild steel.",
+    overviewDesc2: "Ideal for high-elevation balcony balustrades and building breezeway screens where lightweight safety and zero structural loading are vital.",
+    overviewImg: "/assets/categories/gfrc/jhali-works/JH-03.png",
+    badges: [
+      { type: "layers", label: "Zero Corrosion\n100% Rust-Proof" },
+      { type: "grid", label: "Precision CAD\nFiligree Detail" },
+      { type: "building", label: "Featherlight\nRooftop Safety" }
+    ],
+    advantages: [
+      { num: "01", title: "Rust & Salinity Immunity", desc: "Non-metallic composite matrix will never rust, corrode, or leach rust streaks onto pristine facades." },
+      { num: "02", title: "Fine Filigree Intricacy", desc: "Achieves razor-sharp apertures, multi-level relief patterns, and traditional jaali geometries." },
+      { num: "03", title: "Lightweight High-Rise Mounting", desc: "Easy to secure onto cantilevered balconies without overloading structural slab reinforcement." },
+      { num: "04", title: "Low Thermal Expansion", desc: "Engineered resin matrix retains structural rigidity under intense tropical summer sunlight." }
+    ],
+    applications: [
+      "Balcony Privacy & Shading Lattices",
+      "Rooftop Terrace Pergola Screens",
+      "HVAC & Mechanical Equipment Camouflage",
+      "Heritage Banquet Hall Partition Screens",
+      "Coastal Villa Architectural Jali Murals"
+    ],
+    ctaTitle: "Looking for FRP Jhali Works?",
+    ctaDesc: "Share your custom jaali motif, aperture percentage, or CAD drawings with our team for rapid mould development and quotation.",
+    footerSubtitle: "START YOUR PROJECT",
+    footerTitle: "Need Custom FRP Jhali Works?",
+    footerDesc: "Send your custom pattern drawings or elevation dimensions to receive technical feasibility feedback and budget estimates.",
+    gallery: [
+      { code: "FRP-JH-01", src: "/assets/categories/gfrc/jhali-works/JH-02.png", title: "Floral Lattice Perforated Composite Screen", alt: "Floral Lattice Perforated Composite Screen" },
+      { code: "FRP-JH-02", src: "/assets/categories/gfrc/jhali-works/JH-03.png", title: "Deep-Relief Islamic Geometric Jali", alt: "Deep-Relief Islamic Geometric Jali" },
+      { code: "FRP-JH-03", src: "/assets/categories/gfrc/jhali-works/JH-04.png", title: "Full-Height Exterior Facade Screen", alt: "Full-Height Exterior Facade Screen" },
+      { code: "FRP-JH-04", src: "/assets/categories/gfrc/jhali-works/JH-05.png", title: "Parametric Perforated Shading Panel", alt: "Parametric Perforated Shading Panel" }
+    ]
+  },
+
+  "frp-window-arches": {
+    id: "frp-window-arches",
+    category: "Sri Sumeru FRP ARCHITECTURAL PRODUCTS",
+    categoryLink: "/frp-products",
+    title: "FRP Window Arches",
+    subtitle: "Curved Classical Fenestration Surrounds, Architraves & Pediments",
+    desc: "Lightweight architectural window surrounds, segmental arches, and entrance pediments crafted from high-density FRP composites. Engineered for precision radius curvature and easy dry installation above structural lintels with zero load stress on exterior masonry.",
+    heroImg: "/assets/categories/gfrc/window-arches/WA-02.png",
+    overviewTitle: "Classical Fenestration Elegance with Lightweight Precision",
+    overviewDesc1: "Our FRP window arches and door surrounds reproduce grand European classical keystones, imposts, and fluted architraves without the heavy hoisting cranes demanded by precast concrete.",
+    overviewDesc2: "Factory-cast drip grooves shed rainwater cleanly away from glass frames, preventing wall staining and interior moisture ingress.",
+    overviewImg: "/assets/categories/gfrc/window-arches/WA-03.png",
+    badges: [
+      { type: "layers", label: "Exact CAD\nRadius Match" },
+      { type: "grid", label: "Integrated\nKeystone Trims" },
+      { type: "building", label: "Effortless Dry\nLintel Rigging" }
+    ],
+    advantages: [
+      { num: "01", title: "Featherlight Structural Load", desc: "Easily affixed over structural window openings using concealed stainless mechanical clips." },
+      { num: "02", title: "Repetitive Dimensional Accuracy", desc: "Molded from master steel formwork ensuring 100% uniformity across hundreds of window openings." },
+      { num: "03", title: "Rainwater Deflection Detailing", desc: "Built-in drip edges channel storm runoff away from window perimeter caulking." },
+      { num: "04", title: "Authentic Stone Texturing", desc: "Finished with natural limestone or sandstone textured coats for monolithic masonry character." }
+    ],
+    applications: [
+      "Luxury Villa Classical Window Surrounds",
+      "Clubhouse & Resort Grand Portals",
+      "French Window Curved Decorative Arches",
+      "Eave Pediment & Fanlight Framing",
+      "Classical Colonnade Archway Connections"
+    ],
+    ctaTitle: "Looking for FRP Window Arches?",
+    ctaDesc: "Provide your structural window opening dimensions and preferred classical profile for itemized quantity estimation.",
+    footerSubtitle: "START YOUR PROJECT",
+    footerTitle: "Need Custom FRP Window Arches?",
+    footerDesc: "Discuss your fenestration details and elevation styles with our composite design engineers.",
+    gallery: [
+      { code: "FRP-WA-01", src: "/assets/categories/gfrc/window-arches/WA-02.png", title: "Grand Colonnade Window Arch Surround", alt: "Grand Colonnade Window Arch Surround" },
+      { code: "FRP-WA-02", src: "/assets/categories/gfrc/window-arches/WA-03.png", title: "Curved Architrave Framing Profile", alt: "Curved Architrave Framing Profile" },
+      { code: "FRP-WA-03", src: "/assets/categories/gfrc/window-arches/WA-04.png", title: "Ornamental Classical Window Archway", alt: "Ornamental Classical Window Archway" }
+    ]
+  },
+
+  "frp-balusters": {
+    id: "frp-balusters",
+    category: "Sri Sumeru FRP ARCHITECTURAL PRODUCTS",
+    categoryLink: "/frp-products",
+    title: "FRP Balusters & Railings",
+    subtitle: "High-Strength Classical Balustrades, Spindles & Parapet Railings",
+    desc: "Sri Sumeru FRP architectural balusters and terrace railing systems provide monumental classical elegance for rooftop terraces, grand staircases, and cantilevered balconies with superior impact toughness and zero vulnerability to moisture or rebar corrosion.",
+    heroImg: "/assets/categories/gfrc/baluster/BL-2.png",
+    overviewTitle: "Timeless Terrace Balustrades with High-Elevation Safety",
+    overviewDesc1: "Our hollow and core-reinforced FRP baluster spindles assemble into monolithic railing systems complete with profiled top handrails and sturdy bottom plinth curbs.",
+    overviewDesc2: "Because they contain zero steel rebar to rust or swell, our FRP balustrades never crack, spall, or shed hazardous concrete chunks from elevated balconies.",
+    overviewImg: "/assets/categories/gfrc/baluster/BL-3.png",
+    badges: [
+      { type: "layers", label: "Zero Rebar\nCorrosion" },
+      { type: "grid", label: "High Impact\nToughness" },
+      { type: "building", label: "Safe Balcony\nCantilever Load" }
+    ],
+    advantages: [
+      { num: "01", title: "No Concrete Spalling", desc: "Composite resin formulation prevents moisture absorption, eliminating the freeze-thaw or rebar rust failure common in concrete." },
+      { num: "02", title: "Featherlight Terrace Rigging", desc: "Drastically reduces dead-load on cantilevered balcony slabs and roof gardens." },
+      { num: "03", title: "Smooth Uniform Symmetry", desc: "Precision rotational or compression molding guarantees identical spindle profiles and flawless finish." },
+      { num: "04", title: "High-Strength Tie Rod Anchoring", desc: "Internal anchoring channels accept stainless steel tie rods for certified structural guardrail compliance." }
+    ],
+    applications: [
+      "Rooftop Terrace Guardrails",
+      "Luxury Villa Balcony Parapets",
+      "Grand Staircase Decorative Balustrades",
+      "Podium Landscape Boundary Walls",
+      "Swimming Pool & Gazebo Enclosures"
+    ],
+    ctaTitle: "Looking for FRP Balusters & Railings?",
+    ctaDesc: "Share your linear footage requirements and preferred spindle design for certified guardrail estimates.",
+    footerSubtitle: "START YOUR PROJECT",
+    footerTitle: "Need Custom FRP Balusters & Railings?",
+    footerDesc: "Send your site plans or balcony elevation drawings for fast engineering support and quotation.",
+    gallery: [
+      { code: "FRP-BL-01", src: "/assets/categories/gfrc/baluster/BL-2.png", title: "Classical Fluted Composite Baluster Spindle", alt: "Classical Fluted Composite Baluster Spindle" },
+      { code: "FRP-BL-02", src: "/assets/categories/gfrc/baluster/BL-3.png", title: "Terrace Parapet Balustrade Run", alt: "Terrace Parapet Balustrade Run" },
+      { code: "FRP-BL-03", src: "/assets/categories/gfrc/baluster/BL-4.png", title: "Ornamental Curved Baluster Post Assembly", alt: "Ornamental Curved Baluster Post Assembly" }
+    ]
+  },
+
+  "frp-architectural-mouldings": {
+    id: "frp-architectural-mouldings",
+    category: "Sri Sumeru FRP ARCHITECTURAL PRODUCTS",
+    categoryLink: "/frp-products",
+    title: "FRP Architectural Mouldings",
+    subtitle: "Featherlight Exterior String Courses, Fascia Bands & Frieze Profiles",
+    desc: "Sri Sumeru FRP architectural mouldings deliver razor-sharp decorative friezes, horizontal string courses, and wall trims with exceptional lightness, ensuring fast dry mounting on high-rise facades with zero risk of structural dislodgement.",
+    heroImg: "/assets/categories/gfrc/architectural-mouldings/AM-2.png",
+    overviewTitle: "Crisp Wall Banding with Effortless High-Rise Rigging",
+    overviewDesc1: "Our continuous FRP mouldings and fascia trims provide uninterrupted shadow lines across extended building perimeters without heavy anchorage steelwork.",
+    overviewDesc2: "UV-stabilized resin composites prevent cracking, surface crumbling, or paint peeling under harsh monsoon and sunlight cycles.",
+    overviewImg: "/assets/categories/gfrc/architectural-mouldings/AM-3.png",
+    badges: [
+      { type: "layers", label: "Featherlight\nWall Trims" },
+      { type: "grid", label: "Seamless Long\nSpan Runs" },
+      { type: "building", label: "Zero Spalling\nRisk" }
+    ],
+    advantages: [
+      { num: "01", title: "Fast High-Rise Installation", desc: "Long 3-meter to 6-meter modular sections reduce joint count and install quickly with structural adhesives and mechanical clips." },
+      { num: "02", title: "Sharp Profile Precision", desc: "Dentils, beads, and cove lines maintain crisp definition that will never crumble or chip." },
+      { num: "03", title: "Monsoon Moisture Proof", desc: "Impermeable non-porous surface eliminates water absorption, moss, and efflorescence blooms." },
+      { num: "04", title: "Minimal Scaffolding Time", desc: "Lightweight sections allow two-person installation without heavy floor hoisting cranes." }
+    ],
+    applications: [
+      "Floor-Dividing Horizontal String Courses",
+      "High-Level Fascia & Parapet Trims",
+      "Doorway & Entrance Portico Trim Bands",
+      "Commercial Tower Floor Line Highlights",
+      "Villa Exterior Architectural Friezes"
+    ],
+    ctaTitle: "Looking for FRP Architectural Mouldings?",
+    ctaDesc: "Consult with our mould engineering team for custom architectural trim profiles and section drawings.",
+    footerSubtitle: "START YOUR PROJECT",
+    footerTitle: "Need Custom FRP Architectural Mouldings?",
+    footerDesc: "Provide your profile cross-sections or architectural elevation sheets for an itemized estimate.",
+    gallery: [
+      { code: "FRP-AM-01", src: "/assets/categories/gfrc/architectural-mouldings/AM-2.png", title: "Multi-Step Horizontal Composite Fascia", alt: "Multi-Step Horizontal Composite Fascia" },
+      { code: "FRP-AM-02", src: "/assets/categories/gfrc/architectural-mouldings/AM-3.png", title: "Decorative Dentil String Course Band", alt: "Decorative Dentil String Course Band" },
+      { code: "FRP-AM-03", src: "/assets/categories/gfrc/architectural-mouldings/AM-4.png", title: "Continuous Exterior Wall Crown Profile", alt: "Continuous Exterior Wall Crown Profile" }
+    ]
+  },
+
+  "frp-brackets": {
+    id: "frp-brackets",
+    category: "Sri Sumeru FRP ARCHITECTURAL PRODUCTS",
+    categoryLink: "/frp-products",
+    title: "FRP Architectural Brackets",
+    subtitle: "High-Projection Decorative Corbels, Eave Modillions & Support Accents",
+    desc: "Lightweight decorative brackets and modillions crafted from high-impact FRP composites. Designed to bring dramatic classical shadow depth under high cornices, balconies, and eave cantilevers with negligible structural dead-load.",
+    heroImg: "/assets/categories/gfrc/brackets/BR-2.png",
+    overviewTitle: "Dramatic Cantilever Shadow Relief with Featherlight Safety",
+    overviewDesc1: "Our FRP corbels and eave brackets capture ornate classical scrolls, acanthus leaves, and fluted steps with breathtaking fidelity, mounted safely with concealed fixing points.",
+    overviewDesc2: "Ideal for high-elevation roof projections where installing heavy stone or concrete brackets creates severe structural and safety hazards.",
+    overviewImg: "/assets/categories/gfrc/brackets/BR-3.png",
+    badges: [
+      { type: "layers", label: "Featherlight\nRoof Eaves" },
+      { type: "grid", label: "Intricate Scroll\nSculpting" },
+      { type: "building", label: "Zero Falling\nHazard" }
+    ],
+    advantages: [
+      { num: "01", title: "High-Projection Safety", desc: "Weighing a fraction of stone, large 600mm-1200mm projection brackets install safely on soffits and eaves." },
+      { num: "02", title: "Concealed Mechanical Mounting", desc: "Factory-embedded steel anchor inserts allow hidden fastener mounting to timber or concrete substrates." },
+      { num: "03", title: "Fine Sculptural Fidelity", desc: "Captures traditional floral volutes and stepped architectural modillion lines flawlessly." },
+      { num: "04", title: "Zero Rot or Decay", desc: "Unlike timber brackets that rot, or metal brackets that rust, FRP composites remain pristine indefinitely." }
+    ],
+    applications: [
+      "Roof Overhang Eave Modillions",
+      "Balcony Soffit Support Accents",
+      "Portico Entrance Archway Corbels",
+      "Window Sill Decorative Brackets",
+      "Heritage Villa Facade Adornments"
+    ],
+    ctaTitle: "Looking for FRP Architectural Brackets?",
+    ctaDesc: "Send your bracket projection, height, and stylistic motif drawings for custom composite production.",
+    footerSubtitle: "START YOUR PROJECT",
+    footerTitle: "Need Custom FRP Architectural Brackets?",
+    footerDesc: "Connect with our design team for custom bracket drawings, prototypes, and project pricing.",
+    gallery: [
+      { code: "FRP-BR-01", src: "/assets/categories/gfrc/brackets/BR-2.png", title: "Stepped Classical Corbel Bracket", alt: "Stepped Classical Corbel Bracket" },
+      { code: "FRP-BR-02", src: "/assets/categories/gfrc/brackets/BR-3.png", title: "Scroll Volute Eave Modillion Bracket", alt: "Scroll Volute Eave Modillion Bracket" },
+      { code: "FRP-BR-03", src: "/assets/categories/gfrc/brackets/BR-4.png", title: "High-Projection Soffit Bracket Detail", alt: "High-Projection Soffit Bracket Detail" }
+    ]
+  },
+
   "cladding": { id: "cladding", alias: "gfrc-facade-works" },
   "panel-cladding": { id: "panel-cladding", alias: "gfrc-facade-works" },
   "wall-cladding-panels": { id: "wall-cladding-panels", alias: "gfrc-facade-works" },
@@ -527,9 +827,16 @@ export const productsData = {
 };
 
 export const frpProductSlugs = [
-  "frp-cornices",
   "frp-dome-work",
-  "frp-planter-box"
+  "frp-column-works",
+  "frp-cornices",
+  "frp-facade-works",
+  "frp-planter-box",
+  "frp-jhali-works",
+  "frp-window-arches",
+  "frp-balusters",
+  "frp-architectural-mouldings",
+  "frp-brackets"
 ];
 
 export const gfrcProductSlugs = [

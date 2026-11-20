@@ -64,31 +64,55 @@ export default function FrpProducts() {
       <div className="cs_horizontal_slider cs_type_1 cs_accent_bg cs_primary_font">
         <div className="cs_slider_inner">
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>FRP CORNICES</span>
+            <span>FRP ARCHITECTURAL DOMES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FRP DOME WORK</span>
+            <span>COLUMN ENCASEMENTS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FRP PLANTER BOXES</span>
+            <span>FEATHERLIGHT CORNICES</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>FACADE CLADDING PANELS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>MONOLITHIC PLANTERS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>DECORATIVE JHALIS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>WINDOW ARCHES &amp; PEDIMENTS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>BALUSTERS &amp; RAILINGS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>ARCHITECTURAL MOULDINGS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>BRACKETS &amp; CORBELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FEATHERLIGHT CANTILEVERS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>UV &amp; MONSOON IMMUNITY</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>ZERO CRACKING COMPOSITES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
           </div>
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>FRP CORNICES</span>
+            <span>FRP ARCHITECTURAL DOMES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FRP DOME WORK</span>
+            <span>COLUMN ENCASEMENTS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FRP PLANTER BOXES</span>
+            <span>FEATHERLIGHT CORNICES</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>FACADE CLADDING PANELS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>MONOLITHIC PLANTERS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>DECORATIVE JHALIS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>WINDOW ARCHES &amp; PEDIMENTS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>BALUSTERS &amp; RAILINGS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>ARCHITECTURAL MOULDINGS</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>BRACKETS &amp; CORBELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FEATHERLIGHT CANTILEVERS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>UV &amp; MONSOON IMMUNITY</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>ZERO CRACKING COMPOSITES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
           </div>
         </div>
@@ -113,7 +137,7 @@ export default function FrpProducts() {
           </div>
           <div className="cs_height_60 cs_height_lg_40"></div>
           
-          <div className="cs_prod_cards_grid cs_prod_cards_grid_3col" role="list">
+          <div className="cs_prod_cards_grid" role="list">
             {products.map((item, idx) => (
               <div className="cs_prod_card_item" role="listitem" key={item.id}>
                 <div className="cs_prod_card_thumb">
