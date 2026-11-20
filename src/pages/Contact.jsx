@@ -8,6 +8,31 @@ export default function Contact() {
     const form = document.getElementById("cs_form");
     if (!form) return;
 
+    const productSelect = form.querySelector('select[name="product_required"]');
+    const otherWrap = form.querySelector('#cs_contact_other_product_wrap');
+    const otherInput = form.querySelector('input[name="other_product"]');
+
+    const handleProductChange = () => {
+      if (!productSelect || !otherWrap) return;
+      if (productSelect.value === "Others") {
+        otherWrap.style.display = "block";
+        if (otherInput) {
+          otherInput.setAttribute("required", "true");
+          setTimeout(() => otherInput.focus(), 100);
+        }
+      } else {
+        otherWrap.style.display = "none";
+        if (otherInput) {
+          otherInput.removeAttribute("required");
+          otherInput.value = "";
+        }
+      }
+    };
+
+    if (productSelect) {
+      productSelect.addEventListener("change", handleProductChange);
+    }
+
     const handleSubmit = async (e) => {
       e.preventDefault();
 
@@ -17,19 +42,32 @@ export default function Contact() {
       const nameInput = form.querySelector('input[name="name"]');
       const phoneInput = form.querySelector('input[name="phone"]');
       const emailInput = form.querySelector('input[name="email"]');
-      const subjectInput = form.querySelector('input[name="subject"]');
+      const locationInput = form.querySelector('input[name="location"]');
       const messageInput = form.querySelector('textarea[name="message"]');
 
       const name = nameInput ? nameInput.value.trim() : "";
       const phone = phoneInput ? phoneInput.value.trim() : "";
       const email = emailInput ? emailInput.value.trim() : "";
-      const subject = subjectInput ? subjectInput.value.trim() : "";
+      const selectedProduct = productSelect ? productSelect.value.trim() : "";
+      const otherProduct = otherInput ? otherInput.value.trim() : "";
+      const locationVal = locationInput ? locationInput.value.trim() : "";
       const message = messageInput ? messageInput.value.trim() : "";
 
       if (!name || !phone) {
-        alert("Please enter your name and contact phone number.");
+        alert("Please enter name and contact number.");
         return;
       }
+
+      if (selectedProduct === "Others" && !otherProduct) {
+        alert("Please type the required product name.");
+        if (otherInput) otherInput.focus();
+        return;
+      }
+
+      const finalProduct =
+        selectedProduct === "Others"
+          ? `Other: ${otherProduct}`
+          : selectedProduct || "General Architectural Inquiry";
 
       if (submitBtn) {
         submitBtn.disabled = true;
@@ -41,8 +79,9 @@ export default function Contact() {
           name,
           phone,
           email,
-          subject: subject || `Contact Page Inquiry from ${name}`,
-          product_interest: subject || "Architectural Facade & Cladding",
+          product_interest: finalProduct,
+          location: locationVal,
+          subject: `Contact Page Inquiry: [${finalProduct}] - ${name}`,
           message,
           source: "Contact Us Page Form",
           page_url: window.location.href,
@@ -53,9 +92,18 @@ export default function Contact() {
             <div class="cs_contact_success_box p-4 text-center" style="background: rgba(202, 160, 92, 0.08); border: 1px solid rgba(202, 160, 92, 0.35); border-radius: 16px; margin-top: 10px; width: 100%;">
               <div style="font-size: 42px; color: #caa05c; margin-bottom: 14px;"><i class="fa-solid fa-circle-check"></i></div>
               <h3 style="font-size: 24px; font-weight: 700; color: #181818; margin-bottom: 10px; font-family: var(--primary-font, sans-serif);">Thank You, ${name}!</h3>
-              <p style="font-size: 15px; color: #555; margin-bottom: 22px; line-height: 1.6;">Your architectural inquiry has been forwarded to our engineering team at Bangalore. We will get back to you at <strong>${phone}</strong> shortly.</p>
+              <p style="font-size: 15px; color: #555; margin-bottom: 18px; line-height: 1.6;">
+                Your inquiry for <strong>${finalProduct}</strong> has been forwarded to our Bangalore plant engineering desk. We will contact you at <strong>${phone}</strong> shortly.
+              </p>
+              ${
+                locationVal
+                  ? `<p style="font-size: 13px; color: #777; margin-bottom: 20px;"><i class="fa-solid fa-location-dot me-1"></i> Location: <strong>${locationVal}</strong></p>`
+                  : ""
+              }
               <a href="https://wa.me/919686237878?text=${encodeURIComponent(
-                `Hi Sri Sumeru GFRC & FRP, I just submitted an inquiry on your website: ${name} (${phone}).`
+                `Hi Sri Sumeru GFRC & FRP, I just submitted an inquiry on your Contact page.\nName: ${name}\nContact: ${phone}\nProduct Required: ${finalProduct}${
+                  locationVal ? `\nLocation: ${locationVal}` : ""
+                }`
               )}" target="_blank" rel="noopener noreferrer" class="cs_btn_style_1 cs_fs_14 cs_bold cs_primary_font cs_radius_50 d-inline-flex align-items-center gap-2" style="padding: 12px 28px; background: #25d366; color: white; text-decoration: none;">
                 <i class="fa-brands fa-whatsapp"></i> <span>CONNECT ON WHATSAPP</span>
               </a>
@@ -79,7 +127,12 @@ export default function Contact() {
     };
 
     form.addEventListener("submit", handleSubmit);
-    return () => form.removeEventListener("submit", handleSubmit);
+    return () => {
+      form.removeEventListener("submit", handleSubmit);
+      if (productSelect) {
+        productSelect.removeEventListener("change", handleProductChange);
+      }
+    };
   }, []);
 
   return <HtmlBlock html={siteContent.pages.Contact} />;

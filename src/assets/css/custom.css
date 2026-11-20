@@ -5458,6 +5458,50 @@ button.cs_faq_submit_btn.cs_btn_style_1:disabled {
   }
 }
 
+/* =================================================================
+   7. Standardized Form Dropdown & Conditional Product Field
+================================================================= */
+.cs_contact_form select.cs_form_field {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #181818;
+  padding-right: 48px;
+  font-family: var(--secondary-font, "Space Grotesk", sans-serif);
+}
+
+.cs_contact_form select.cs_form_field:invalid {
+  color: #8c8983;
+}
+
+.cs_contact_form .cs_select_caret {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent-color, #caa05c);
+  pointer-events: none;
+  font-size: 14px;
+}
+
+.cs_other_product_anim {
+  animation: cs_fade_slide_in 0.28s ease-out;
+}
+
+@keyframes cs_fade_slide_in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 
 

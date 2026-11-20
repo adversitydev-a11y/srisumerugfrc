@@ -2,19 +2,21 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { sendInquiry } from "../services/emailService.js";
 
-const PRODUCT_INTEREST_OPTIONS = [
-  { value: "GFRC Architectural Products", label: "GFRC Architectural Products (General)" },
-  { value: "GFRC Facade Cladding Panels", label: "GFRC Facade Cladding Panels" },
+const PRODUCT_OPTIONS = [
+  { value: "GFRC Architectural Cladding Panels", label: "GFRC Architectural Cladding Panels" },
   { value: "GFRC Jhali / Decorative Screens", label: "GFRC Jhali / Decorative Screens" },
-  { value: "GFRC Columns & Pillars", label: "GFRC Columns & Pillars" },
+  { value: "GFRC Columns & Classical Pillars", label: "GFRC Columns & Classical Pillars" },
   { value: "GFRC Architectural Mouldings & Cornices", label: "GFRC Architectural Mouldings & Cornices" },
-  { value: "GFRC Window Arches & Balusters", label: "GFRC Window Arches & Balusters" },
-  { value: "FRP Architectural Products", label: "FRP Architectural Products (General)" },
-  { value: "FRP Cornices & Mouldings", label: "FRP Cornices & Mouldings" },
-  { value: "FRP Domes & Architectural Cupolas", label: "FRP Domes & Architectural Cupolas" },
+  { value: "GFRC Window Arches & Portals", label: "GFRC Window Arches & Portals" },
+  { value: "GFRC Balusters & Railings", label: "GFRC Balusters & Railings" },
+  { value: "GFRC Planter Boxes", label: "GFRC Planter Boxes" },
+  { value: "GFRC Brackets", label: "GFRC Brackets" },
+  { value: "FRP Cornices & Architectural Mouldings", label: "FRP Cornices & Architectural Mouldings" },
+  { value: "FRP Domes & Cupolas", label: "FRP Domes & Cupolas" },
   { value: "FRP Planter Boxes & Pots", label: "FRP Planter Boxes & Pots" },
+  { value: "Temple GFRC & Heritage Elements", label: "Temple GFRC & Heritage Elements" },
   { value: "Custom Architectural Facade Solutions", label: "Custom Architectural Facade Solutions" },
-  { value: "Temple GFRC & Heritage Restoration", label: "Temple GFRC & Heritage Restoration" },
+  { value: "Others", label: "Others (Specify Custom Product)" },
 ];
 
 function detectCategoryFromLocation(pathname, search) {
@@ -25,33 +27,30 @@ function detectCategoryFromLocation(pathname, search) {
   // 1. Detailed product view via query param ?product=...
   if (productParam) {
     if (productParam.includes("jhali")) return "GFRC Jhali / Decorative Screens";
-    if (productParam.includes("column-works") || productParam.includes("pillar")) return "GFRC Columns & Pillars";
-    if (productParam.includes("facade-works") || productParam.includes("cladding")) return "GFRC Facade Cladding Panels";
+    if (productParam.includes("column-works") || productParam.includes("pillar")) return "GFRC Columns & Classical Pillars";
+    if (productParam.includes("facade-works") || productParam.includes("cladding")) return "GFRC Architectural Cladding Panels";
     if (productParam.includes("moulding") || (productParam.includes("cornice") && productParam.startsWith("gfrc"))) {
       return "GFRC Architectural Mouldings & Cornices";
     }
-    if (productParam.includes("baluster") || productParam.includes("window-arch")) return "GFRC Window Arches & Balusters";
-    if (productParam.includes("bracket")) return "GFRC Architectural Mouldings & Cornices";
-    if (productParam.includes("planter") && productParam.startsWith("gfrc")) return "GFRC Architectural Products";
+    if (productParam.includes("baluster")) return "GFRC Balusters & Railings";
+    if (productParam.includes("window-arch")) return "GFRC Window Arches & Portals";
+    if (productParam.includes("bracket")) return "GFRC Brackets";
+    if (productParam.includes("planter") && productParam.startsWith("gfrc")) return "GFRC Planter Boxes";
 
-    if (productParam.includes("cornice") && productParam.startsWith("frp")) return "FRP Cornices & Mouldings";
-    if (productParam.includes("dome")) return "FRP Domes & Architectural Cupolas";
+    if (productParam.includes("cornice") && productParam.startsWith("frp")) return "FRP Cornices & Architectural Mouldings";
+    if (productParam.includes("dome")) return "FRP Domes & Cupolas";
     if (productParam.includes("planter") && productParam.startsWith("frp")) return "FRP Planter Boxes & Pots";
-    if (productParam.startsWith("frp-")) return "FRP Architectural Products";
-    if (productParam.startsWith("gfrc-")) return "GFRC Architectural Products";
   }
 
   // 2. Main route-level detection
-  if (normalizedPath.includes("gfrc-products")) return "GFRC Architectural Products";
-  if (normalizedPath.includes("frp-products") || normalizedPath.includes("products") || normalizedPath.includes("services")) {
-    return "FRP Architectural Products";
-  }
+  if (normalizedPath.includes("gfrc-products")) return "GFRC Architectural Cladding Panels";
+  if (normalizedPath.includes("frp-products")) return "FRP Cornices & Architectural Mouldings";
   if (normalizedPath.includes("projects") || normalizedPath.includes("portfolio")) {
     return "Custom Architectural Facade Solutions";
   }
 
-  // 3. General default for Home, About, Faq, Blog, Contact
-  return "GFRC Architectural Products";
+  // 3. Default
+  return "GFRC Architectural Cladding Panels";
 }
 
 export default function FaqConsultationForm({ preselectedInterest, idPrefix = "faq", isModal = false, onClose }) {
@@ -61,7 +60,9 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
     name: "",
     phone: "",
     email: "",
-    interest: preselectedInterest || detectCategoryFromLocation(location?.pathname, location?.search),
+    productRequired: preselectedInterest || detectCategoryFromLocation(location?.pathname, location?.search),
+    otherProduct: "",
+    location: "",
     message: "",
   });
 
@@ -73,9 +74,9 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
     const autoInterest = preselectedInterest || detectCategoryFromLocation(location?.pathname, location?.search);
     setFormData((prev) => ({
       ...prev,
-      interest: autoInterest,
+      productRequired: autoInterest,
     }));
-  }, [location.pathname, location.search, preselectedInterest]);
+  }, [location?.pathname, location?.search, preselectedInterest]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -84,6 +85,11 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
       [name]: value,
     }));
   };
+
+  const effectiveProduct =
+    formData.productRequired === "Others"
+      ? formData.otherProduct.trim() || "Others"
+      : formData.productRequired;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -94,28 +100,34 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
       return;
     }
 
+    if (formData.productRequired === "Others" && !formData.otherProduct.trim()) {
+      setStatus("error");
+      setErrorMessage("Please type the required product name.");
+      return;
+    }
+
     setStatus("submitting");
     setErrorMessage("");
+
+    const finalProduct =
+      formData.productRequired === "Others"
+        ? `Other: ${formData.otherProduct.trim()}`
+        : formData.productRequired || "General Architectural Inquiry";
 
     try {
       const result = await sendInquiry({
         name: formData.name,
         phone: formData.phone,
         email: formData.email,
-        product_interest: formData.interest,
-        subject: `${isModal ? "Global Floating Inquiry" : "FAQ Inquiry"}: [${formData.interest}] - ${formData.name}`,
+        product_interest: finalProduct,
+        location: formData.location,
+        subject: `${isModal ? "Global Floating Inquiry" : "Project Inquiry"}: [${finalProduct}] - ${formData.name}`,
         message: formData.message,
-        source: isModal ? "Global Floating Modal Form" : "FAQ Section Estimation Form",
+        source: isModal ? "Global Floating Modal Form" : "Project Estimation & Consultation Form",
         page_url: typeof window !== "undefined" ? window.location.href : "Website",
       });
 
-      if (result.success) {
-        setStatus("success");
-      } else if (result.notConfigured) {
-        // If keys are not configured yet, simulate success for preview and log guide in console
-        console.info(
-          "[EmailJS] Demo Mode: Inquiry recorded locally. Please configure VITE_EMAILJS_* keys in .env to receive live emails."
-        );
+      if (result.success || result.notConfigured) {
         setStatus("success");
       } else {
         setStatus("error");
@@ -133,7 +145,9 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
       name: "",
       phone: "",
       email: "",
-      interest: preselectedInterest || detectCategoryFromLocation(location?.pathname, location?.search),
+      productRequired: preselectedInterest || detectCategoryFromLocation(location?.pathname, location?.search),
+      otherProduct: "",
+      location: "",
       message: "",
     });
     setStatus("idle");
@@ -156,12 +170,16 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
 
           <h3 className="cs_thankyou_title">Thank You, {formData.name || "Valued Client"}!</h3>
           <p className="cs_thankyou_subtitle">
-            Your technical consultation inquiry for <strong>{formData.interest}</strong> has been received by our Bangalore plant engineering desk.
+            Your inquiry for <strong>{effectiveProduct}</strong> has been received by our Bangalore plant engineering desk.
           </p>
 
           <div className="cs_thankyou_details_box">
             <div className="cs_thankyou_detail_row">
-              <span className="cs_thankyou_label"><i className="fa-solid fa-phone me-1"></i> Contact:</span>
+              <span className="cs_thankyou_label"><i className="fa-solid fa-user me-1"></i> Name:</span>
+              <span className="cs_thankyou_val">{formData.name}</span>
+            </div>
+            <div className="cs_thankyou_detail_row">
+              <span className="cs_thankyou_label"><i className="fa-solid fa-phone me-1"></i> Contact Number:</span>
               <span className="cs_thankyou_val">{formData.phone}</span>
             </div>
             {formData.email && (
@@ -171,9 +189,15 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
               </div>
             )}
             <div className="cs_thankyou_detail_row">
-              <span className="cs_thankyou_label"><i className="fa-solid fa-layer-group me-1"></i> Category:</span>
-              <span className="cs_thankyou_val">{formData.interest}</span>
+              <span className="cs_thankyou_label"><i className="fa-solid fa-cubes me-1"></i> Product Required:</span>
+              <span className="cs_thankyou_val">{effectiveProduct}</span>
             </div>
+            {formData.location && (
+              <div className="cs_thankyou_detail_row">
+                <span className="cs_thankyou_label"><i className="fa-solid fa-location-dot me-1"></i> Location:</span>
+                <span className="cs_thankyou_val">{formData.location}</span>
+              </div>
+            )}
             <div className="cs_thankyou_detail_row">
               <span className="cs_thankyou_label"><i className="fa-solid fa-clock me-1"></i> Response:</span>
               <span className="cs_thankyou_val cs_text_accent">Within 2 to 4 business hours</span>
@@ -187,7 +211,9 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
           <div className="cs_thankyou_actions">
             <a
               href={`https://wa.me/919686237878?text=${encodeURIComponent(
-                `Hi Sri Sumeru GFRC, I just submitted an inquiry for ${formData.interest}. My contact is ${formData.phone}.`
+                `Hi Sri Sumeru GFRC & FRP, I just submitted an inquiry on your website.\nName: ${formData.name}\nContact: ${formData.phone}\nProduct Required: ${effectiveProduct}${
+                  formData.location ? `\nLocation: ${formData.location}` : ""
+                }`
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -231,14 +257,14 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
           </div>
 
           <form onSubmit={handleSubmit} className="cs_faq_form_grid" noValidate={false}>
-            {/* Row 1: Name (Required) + Contact Number (Required) Side by Side */}
+            {/* Field 1 & 2: Name * & Contact Number * (2-Column Grid) */}
             <div className="cs_faq_form_row_2col">
               <input
                 id={`${idPrefix}-form-name`}
                 type="text"
                 name="name"
                 required
-                placeholder="Name *"
+                placeholder="name *"
                 value={formData.name}
                 onChange={handleChange}
                 className="cs_faq_compact_input"
@@ -249,7 +275,7 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
                 type="tel"
                 name="phone"
                 required
-                placeholder="Phone / WA *"
+                placeholder="contact number *"
                 value={formData.phone}
                 onChange={handleChange}
                 className="cs_faq_compact_input"
@@ -257,42 +283,73 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
               />
             </div>
 
-            {/* Row 2: Email (Optional) */}
-            <input
-              id={`${idPrefix}-form-email`}
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              value={formData.email}
-              onChange={handleChange}
-              className="cs_faq_compact_input"
-            />
+            {/* Field 3 & 4: Email & Location (2-Column Grid) */}
+            <div className="cs_faq_form_row_2col">
+              <input
+                id={`${idPrefix}-form-email`}
+                type="email"
+                name="email"
+                placeholder="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="cs_faq_compact_input"
+              />
+              <input
+                id={`${idPrefix}-form-location`}
+                type="text"
+                name="location"
+                placeholder="location"
+                value={formData.location}
+                onChange={handleChange}
+                className="cs_faq_compact_input"
+              />
+            </div>
 
-            {/* Row 3: Product Interest Dropdown (Auto-selected based on current page) */}
+            {/* Field 5: Product Required Dropdown */}
             <div className="cs_faq_compact_select_wrap">
               <select
-                id={`${idPrefix}-form-interest`}
-                name="interest"
-                value={formData.interest}
+                id={`${idPrefix}-form-product`}
+                name="productRequired"
+                value={formData.productRequired}
                 onChange={handleChange}
                 className="cs_faq_compact_input cs_faq_compact_select"
                 required
+                aria-label="product required"
               >
-                {PRODUCT_INTEREST_OPTIONS.map((opt) => (
+                <option value="" disabled>product required</option>
+                {PRODUCT_OPTIONS.map((opt) => (
                   <option key={opt.value} value={opt.value}>
                     {opt.label}
                   </option>
                 ))}
               </select>
-              <i className="fa-solid fa-chevron-down cs_faq_compact_caret"></i>
+              <i className="fa-solid fa-chevron-down cs_faq_compact_caret" aria-hidden="true"></i>
             </div>
 
-            {/* Row 4: Message (Optional) */}
+            {/* Field 5b: If "Others" is selected, input to type custom product name */}
+            {formData.productRequired === "Others" && (
+              <div className="cs_other_product_anim">
+                <input
+                  id={`${idPrefix}-form-other-product`}
+                  type="text"
+                  name="otherProduct"
+                  required
+                  placeholder="type the product name *"
+                  value={formData.otherProduct}
+                  onChange={handleChange}
+                  className="cs_faq_compact_input"
+                  aria-required="true"
+                  autoFocus
+                />
+              </div>
+            )}
+
+            {/* Field 6: Message */}
             <textarea
               id={`${idPrefix}-form-message`}
               name="message"
-              rows="4"
-              placeholder="Tell us about your project requirements or drawings..."
+              rows="3"
+              placeholder="message"
               value={formData.message}
               onChange={handleChange}
               className="cs_faq_compact_input cs_faq_compact_textarea"
@@ -306,7 +363,7 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
               </div>
             )}
 
-            {/* Row 5: Submit Button with Exact Header Button CSS (cs_btn_style_1) */}
+            {/* Submit Button */}
             <button
               type="submit"
               disabled={status === "submitting"}
@@ -323,8 +380,8 @@ export default function FaqConsultationForm({ preselectedInterest, idPrefix = "f
             </button>
 
             <div className="cs_faq_privacy_note">
-              <i className="fa-solid fa-shield-halved"></i>
-              <span>100% confidential. Direct reply from Bangalore plant.</span>
+              <i className="fa-solid fa-shield-halved me-1 text-success"></i>
+              Your contact details are encrypted and used solely for architectural consultation.
             </div>
           </form>
         </>
