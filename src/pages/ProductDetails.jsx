@@ -4,6 +4,7 @@ import { getProductData } from "../data/productsData.js";
 import ProductGallery from "../components/ProductGallery.jsx";
 import OtherProducts from "../components/OtherProducts.jsx";
 import TechKnowledgeFaq from "../components/TechKnowledgeFaq.jsx";
+import NotFound from "./NotFound.jsx";
 
 function getProductDetailsFaq(product) {
   const isFrp = product.material && product.material.toLowerCase().includes("frp");
@@ -39,6 +40,10 @@ export default function ProductDetails() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentSlug]);
+
+  if (!product) {
+    return <NotFound />;
+  }
 
   return (
     <main className="cs_product_details_page">

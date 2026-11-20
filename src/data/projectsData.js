@@ -467,7 +467,7 @@ export function getProjectData(slug) {
   if (normalized.includes("shankara")) {
     return projectsData["shankara"];
   }
-  return projectsData[normalized] || projectsData["harivishram"];
+  return projectsData[normalized] || null;
 }
 
 export function getAllProjects() {

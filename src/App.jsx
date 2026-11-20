@@ -11,6 +11,7 @@ import Blog from "./pages/Blog.jsx";
 import BlogDetails from "./pages/BlogDetails.jsx";
 import Contact from "./pages/Contact.jsx";
 import Faq from "./pages/Faq.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
   return (
@@ -42,10 +43,14 @@ export default function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog-details" element={<BlogDetails />} />
+        <Route path="/blog-details/:slug" element={<BlogDetails />} />
 
         {/* Contact & Bangalore Plant */}
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/* 404 */}
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
