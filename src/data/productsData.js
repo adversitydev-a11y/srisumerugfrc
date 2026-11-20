@@ -564,13 +564,13 @@ export function getProductData(slug) {
   if (!slug) return productsData["gfrc-architectural-mouldings"];
   const cleanSlug = slug.toLowerCase().trim();
   const entry = productsData[cleanSlug];
-  if (!entry) return productsData["gfrc-architectural-mouldings"];
+  if (!entry) return null;
   if (entry.alias) return productsData[entry.alias];
   return entry;
 }
 
 export function getOtherProducts(currentSlug) {
-  const current = getProductData(currentSlug);
+  const current = getProductData(currentSlug) || productsData["gfrc-architectural-mouldings"];
   const currentId = current ? current.id : "gfrc-architectural-mouldings";
   
   // Return other products, prioritizing products from the same category first, then others

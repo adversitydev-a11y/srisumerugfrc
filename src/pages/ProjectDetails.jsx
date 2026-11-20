@@ -2,13 +2,14 @@ import { useEffect } from "react";
 import { useSearchParams, useParams } from "react-router-dom";
 import HtmlBlock from "../components/HtmlBlock.jsx";
 import { getProjectData, getProjectHtml } from "../data/projectsData.js";
+import NotFound from "./NotFound.jsx";
 
 export default function ProjectDetails() {
   const [searchParams] = useSearchParams();
   const { slug } = useParams();
   const projectSlug = slug || searchParams.get("project") || "bougainville";
   const project = getProjectData(projectSlug);
-  const html = getProjectHtml(project);
+  const html = project ? getProjectHtml(project) : null;
 
   useEffect(() => {
     if (project?.seo?.title) {
@@ -25,6 +26,10 @@ export default function ProjectDetails() {
     }
     window.scrollTo(0, 0);
   }, [project]);
+
+  if (!project) {
+    return <NotFound />;
+  }
 
   return <HtmlBlock html={html} />;
 }

@@ -2,14 +2,41 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import FaqConsultationForm from "./FaqConsultationForm.jsx";
 
+const SHOW_AFTER_SCROLL_PX = 150;
+const SHOW_AFTER_MS = 3500;
+
 export default function FloatingLeadWidget() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const location = useLocation();
 
   // Close popup when route changes
   useEffect(() => {
     setIsOpen(false);
   }, [location.pathname, location.search]);
+
+  // Reveal the floating dock only once the visitor scrolls past the hero,
+  // or after a short delay on short pages, so it never overlaps content
+  // that sits at the bottom of the initial viewport.
+  useEffect(() => {
+    setIsVisible(false);
+
+    const handleScroll = () => {
+      if (window.scrollY > SHOW_AFTER_SCROLL_PX) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+
+    const timeoutId = setTimeout(() => setIsVisible(true), SHOW_AFTER_MS);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timeoutId);
+    };
+  }, [location.pathname]);
 
   // Handle Escape key listener
   useEffect(() => {
@@ -46,7 +73,10 @@ export default function FloatingLeadWidget() {
       )}
 
       {/* Floating Buttons Stack - Aligned Strictly in One Vertical Column */}
-      <div className="cs_floating_dock" id="global-floating-dock">
+      <div
+        className={`cs_floating_dock${isVisible || isOpen ? " cs_floating_dock_visible" : ""}`}
+        id="global-floating-dock"
+      >
         {/* 1. SEPARATE WHATSAPP FLOATING BUTTON */}
         <div className="cs_floating_dock_item">
           <span className="cs_floating_dock_tooltip" aria-hidden="true">

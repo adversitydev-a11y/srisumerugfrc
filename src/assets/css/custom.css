@@ -4468,6 +4468,18 @@ button.cs_faq_submit_btn.cs_btn_style_1:disabled {
   flex-direction: column;
   gap: 12px;
   align-items: flex-end;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* Revealed once the visitor scrolls past the hero (or after a short delay),
+   so it never sits on top of content at the bottom of the first viewport. */
+.cs_floating_dock.cs_floating_dock_visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 @media (max-width: 767px) {
