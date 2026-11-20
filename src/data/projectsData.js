@@ -12,6 +12,7 @@ export const projectsData = {
     tagline: "ARCHITECTURAL FEATURES & ORNAMENTAL STRUCTURES",
     date: "2025-01-05",
     dateDisplay: "ARCHITECTURAL FEATURES & ORNAMENTAL STRUCTURES",
+    heroImage: "/assets/img/Projects/Secretariat office/Lotus Pavilion at Twilight.png",
     listingImage: "/assets/img/Projects/Secretariat office/Lotus Pavilion at Twilight.png",
     listingImageAlt: "Ornamental domed pavilion with decorative columns and illuminated architectural detailing",
     mainImage: "/assets/img/Projects/Secretariat office/Lotus Pavilion at Twilight.png",
@@ -52,6 +53,7 @@ export const projectsData = {
     tagline: "INSTITUTIONAL ARCHITECTURE & ORNAMENTAL DETAILING",
     date: "2025-01-15",
     dateDisplay: "INSTITUTIONAL ARCHITECTURE & ORNAMENTAL DETAILING",
+    heroImage: "/assets/img/Projects/Basava Hall/Elegant Veranda with Ornate Columns(1).png",
     listingImage: "/assets/img/Projects/Basava Hall/Ornate Tropical Pavilion Columns(1).png",
     listingImageAlt: "Basava Hall traditional architectural pavilion columns and open veranda design",
     mainImage: "/assets/img/Projects/Basava Hall/Ornate Tropical Pavilion Columns(1).png",
@@ -101,6 +103,7 @@ export const projectsData = {
     tagline: "RESIDENTIAL ARCHITECTURE & ORNAMENTAL DETAILING",
     date: "2025-02-10",
     dateDisplay: "RESIDENTIAL ARCHITECTURE & ORNAMENTAL DETAILING",
+    heroImage: "/assets/img/Projects/Kaivalya/Ornate White Columned Villa Porch(1).png",
     listingImage: "/assets/img/Projects/Kaivalya/Ornate Pavilion Amid Lush Greenery(1).png",
     listingImageAlt: "Kaivalya ornate architectural pavilion amid lush greenery with decorative columns and roofline profiles",
     mainImage: "/assets/img/Projects/Kaivalya/Ornate Pavilion Amid Lush Greenery(1).png",
@@ -150,6 +153,7 @@ export const projectsData = {
     tagline: "RESIDENTIAL ARCHITECTURE & FACADE DETAILING",
     date: "2025-03-18",
     dateDisplay: "RESIDENTIAL ARCHITECTURE & FACADE DETAILING",
+    heroImage: "/assets/img/Projects/Harivishram/Modern Beige Apartment Towers with Landscaped Grounds.png",
     listingImage: "/assets/img/Projects/Harivishram/Modern Beige Apartment Towers with Landscaped Grounds.png",
     listingImageAlt: "Harivishram contemporary residential apartment towers and landscaped grounds",
     mainImage: "/assets/img/Projects/Harivishram/Modern Beige Apartment Facade Under Blue Skies.png",
@@ -199,6 +203,7 @@ export const projectsData = {
     tagline: "RESIDENTIAL ARCHITECTURE & DECORATIVE FACADE",
     date: "2025-04-12",
     dateDisplay: "RESIDENTIAL ARCHITECTURE & DECORATIVE FACADE",
+    heroImage: "/assets/img/Projects/Bougainville/Sunlit Classical Arched Colonnade.png",
     listingImage: "/assets/img/Projects/Bougainville/Ornate Cream Villa Boundary Wall.png",
     listingImageAlt: "Bougainville residential architectural detailing with decorative arches and classical columns",
     mainImage: "/assets/img/Projects/Bougainville/Ornate Cream Villa Boundary Wall.png",
@@ -248,6 +253,7 @@ export const projectsData = {
     tagline: "COMMERCIAL ARCHITECTURE & FACADE CLADDING",
     date: "2025-07-28",
     dateDisplay: "COMMERCIAL ARCHITECTURE & FACADE CLADDING",
+    heroImage: "/assets/img/Projects/JST param(Ongoing)/Modern High-Rise Golden Architectural View.png",
     listingImage: "/assets/img/Projects/JST param(Ongoing)/Modern High-Rise with Blue Glass Facade.png",
     listingImageAlt: "JST Param ongoing high-rise commercial façade project with blue glass elevations",
     mainImage: "/assets/img/Projects/JST param(Ongoing)/Modern High-Rise with Blue Glass Facade.png",
@@ -297,6 +303,7 @@ export const projectsData = {
     tagline: "COMMERCIAL ARCHITECTURE & FACADE DETAILING",
     date: "2025-05-10",
     dateDisplay: "COMMERCIAL ARCHITECTURE & FACADE DETAILING",
+    heroImage: "/assets/img/Projects/purva aerocity/Piramal KRA Glass Office Building.png",
     listingImage: "/assets/img/Projects/purva aerocity/Modern Office Building in Golden Light.png",
     listingImageAlt: "Purva Aerocity contemporary commercial architectural façade and glazed elevations",
     mainImage: "/assets/img/Projects/purva aerocity/Modern Office Building in Golden Light.png",
@@ -346,6 +353,7 @@ export const projectsData = {
     tagline: "TEMPLE ARCHITECTURE & DECORATIVE FACADE",
     date: "2025-06-15",
     dateDisplay: "TEMPLE ARCHITECTURE & DECORATIVE FACADE",
+    heroImage: "/assets/img/Projects/dhyan mandir/Grand Indo-Classical Venue Entrance.png",
     listingImage: "/assets/img/Projects/dhyan mandir/Grand Indo-Classical Venue Entrance.png",
     listingImageAlt: "Dhyan Mandir ornate architectural entrance with decorative columns and domes",
     mainImage: "/assets/img/Projects/dhyan mandir/Grand Indo-Classical Venue Entrance.png",
@@ -395,6 +403,7 @@ export const projectsData = {
     tagline: "RESIDENTIAL ARCHITECTURE & FACADE DETAILING",
     date: "2025-09-20",
     dateDisplay: "RESIDENTIAL ARCHITECTURE & FACADE DETAILING",
+    heroImage: "/assets/img/Projects/Shankara/Symmetrical Courtyard Apartment Facade.png",
     listingImage: "/assets/img/Projects/Shankara/Tropical Courtyard Apartment Complex.png",
     listingImageAlt: "Shankara residential apartment complex exterior façade and landscaped courtyard",
     mainImage: "/assets/img/Projects/Shankara/Tropical Courtyard Apartment Complex.png",
@@ -522,10 +531,13 @@ export function getProjectHtml(project) {
     .map((text) => `<p>${text}</p>`)
     .join("\n              ");
 
+  const rawHeroImg = p.heroImage || p.mainImage || p.listingImage || "/assets/img/page-header-bg1.webp";
+  const safeHeroImg = encodeURI(rawHeroImg);
+
   return `<main>
     <!-- Start Page Header Section -->
-    <section class="cs_page_header_style_1 cs_bg_filed cs_gray_bg position-relative" data-src="/assets/img/page-header-bg1.webp">
-      <div class="cs_overlay cs_primary_bg position-absolute"></div>
+    <section class="cs_page_header_style_1 cs_bg_filed cs_gray_bg position-relative" data-src="${safeHeroImg}" style="background-image: url('${safeHeroImg}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <div class="cs_overlay cs_primary_bg position-absolute" style="opacity: 0.65;"></div>
       <div class="container">
         <div class="cs_page_header_content text-center">
           <h1 class="cs_page_header_title cs_fs_80 cs_bold cs_white_color cs_mb_16">${p.title}</h1>
