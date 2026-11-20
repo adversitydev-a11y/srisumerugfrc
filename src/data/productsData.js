@@ -494,11 +494,11 @@ export const productsData = {
     title: "FRP Column Works",
     subtitle: "Lightweight Monolithic Column Encasements & Fluted Classical Pillars",
     desc: "Engineered from high-impact composite polymer matrices, our Sri Sumeru FRP column covers and hollow pillar encasements deliver classical fluted and smooth monumental aesthetics with up to 80% weight reduction compared to solid stone, enabling rapid dry installation around structural steel or RCC shafts.",
-    heroImg: "/assets/categories/gfrc/column-works/CW-02.png",
+    heroImg: "/assets/categories/gfrc/column-works/GR-CL-02.png",
     overviewTitle: "Monumental Classical Columns with Featherlight Rigging Safety",
     overviewDesc1: "Sri Sumeru FRP column covers are manufactured in interlocking semi-circular or modular segmented shells that dry-encase existing steel stanchions or concrete pillars with zero wet-masonry mess.",
     overviewDesc2: "Finished with automotive-grade UV gelcoats or textured stone-effect patinas for lifetime resistance against monsoon moisture, cracking, and surface discoloration.",
-    overviewImg: "/assets/categories/gfrc/column-works/CW-03.png",
+    overviewImg: "/assets/categories/gfrc/column-works/GR-CL-03.png",
     badges: [
       { type: "layers", label: "Hollow Fast\nEncasement" },
       { type: "grid", label: "80% Lighter\nThan Stone" },
@@ -523,10 +523,10 @@ export const productsData = {
     footerTitle: "Need Custom FRP Column Works?",
     footerDesc: "Share your design ideas, dimensions, or drawings with us. Our team will review your project and guide you with the best composite solutions.",
     gallery: [
-      { code: "FRP-CW-01", src: "/assets/categories/gfrc/column-works/CW-02.png", title: "Fluted Composite Classical Column", alt: "Fluted Composite Classical Column" },
-      { code: "FRP-CW-02", src: "/assets/categories/gfrc/column-works/CW-03.png", title: "Smooth Round Column Shell Encasement", alt: "Smooth Round Column Shell Encasement" },
-      { code: "FRP-CW-03", src: "/assets/categories/gfrc/column-works/CW-04.png", title: "Monumental Capital & Shaft Assembly", alt: "Monumental Capital & Shaft Assembly" },
-      { code: "FRP-CW-04", src: "/assets/categories/gfrc/column-works/CW-05.png", title: "Twin Colonnade Entrance Portico", alt: "Twin Colonnade Entrance Portico" }
+      { code: "FRP-CW-01", src: "/assets/categories/gfrc/column-works/GR-CL-02.png", title: "Fluted Composite Classical Column", alt: "Fluted Composite Classical Column" },
+      { code: "FRP-CW-02", src: "/assets/categories/gfrc/column-works/GR-CL-03.png", title: "Smooth Round Column Shell Encasement", alt: "Smooth Round Column Shell Encasement" },
+      { code: "FRP-CW-03", src: "/assets/categories/gfrc/column-works/GR-CL-04.png", title: "Monumental Capital & Shaft Assembly", alt: "Monumental Capital & Shaft Assembly" },
+      { code: "FRP-CW-04", src: "/assets/categories/gfrc/column-works/GR-CL-05.png", title: "Twin Colonnade Entrance Portico", alt: "Twin Colonnade Entrance Portico" }
     ]
   },
 
@@ -537,11 +537,11 @@ export const productsData = {
     title: "FRP Facade Works",
     subtitle: "High-Elevation Lightweight Exterior Cladding & Architectural 3D Panels",
     desc: "Sri Sumeru FRP facade panels provide futuristic geometric 3D relief, sweeping double-curved forms, and monolithic exterior cladding with featherlight structural efficiency, making them the ultimate choice for high-rise elevations, retrofit over-cladding, and iconic corporate towers.",
-    heroImg: "/assets/categories/gfrc/facade-works/FW-02.png",
+    heroImg: "/assets/categories/gfrc/facade-works/FC-02.png",
     overviewTitle: "Sculptural Double-Curved Facades with Extreme Wind-Load Safety",
     overviewDesc1: "Our FRP composite facade panels realize complex geometric envelopes and fluid curvilinear contours that would be cost-prohibitive or structurally too heavy in traditional precast concrete.",
     overviewDesc2: "Engineered with integrated stiffening ribs and corrosion-proof bracket receivers, ensuring robust seismic and wind resistance even at extreme building elevations.",
-    overviewImg: "/assets/categories/gfrc/facade-works/FW-03.png",
+    overviewImg: "/assets/categories/gfrc/facade-works/FC-03.png",
     badges: [
       { type: "layers", label: "Double-Curved\nGeometry" },
       { type: "grid", label: "Featherlight\nHigh-Rise Safety" },
@@ -566,9 +566,9 @@ export const productsData = {
     footerTitle: "Need Custom FRP Facade Works?",
     footerDesc: "Share your facade CAD elevations or 3D models with us to receive comprehensive engineering consultation and itemized BOQ estimates.",
     gallery: [
-      { code: "FRP-FW-01", src: "/assets/categories/gfrc/facade-works/FW-02.png", title: "Precision Modular Composite Cladding", alt: "Precision Modular Composite Cladding" },
-      { code: "FRP-FW-02", src: "/assets/categories/gfrc/facade-works/FW-03.png", title: "Parametric Sculptural Facade Envelope", alt: "Parametric Sculptural Facade Envelope" },
-      { code: "FRP-FW-03", src: "/assets/categories/gfrc/facade-works/FW-04.png", title: "Commercial High-Rise Elevation Panels", alt: "Commercial High-Rise Elevation Panels" }
+      { code: "FRP-FW-01", src: "/assets/categories/gfrc/facade-works/FC-02.png", title: "Precision Modular Composite Cladding", alt: "Precision Modular Composite Cladding" },
+      { code: "FRP-FW-02", src: "/assets/categories/gfrc/facade-works/FC-03.png", title: "Parametric Sculptural Facade Envelope", alt: "Parametric Sculptural Facade Envelope" },
+      { code: "FRP-FW-03", src: "/assets/categories/gfrc/facade-works/FC-04.png", title: "Commercial High-Rise Elevation Panels", alt: "Commercial High-Rise Elevation Panels" }
     ]
   },
 
@@ -827,16 +827,14 @@ export const productsData = {
 };
 
 export const frpProductSlugs = [
-  "frp-dome-work",
   "frp-column-works",
-  "frp-cornices",
   "frp-facade-works",
-  "frp-planter-box",
   "frp-jhali-works",
   "frp-window-arches",
   "frp-balusters",
   "frp-architectural-mouldings",
-  "frp-brackets"
+  "frp-brackets",
+  "frp-planter-box"
 ];
 
 export const gfrcProductSlugs = [

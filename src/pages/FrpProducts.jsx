@@ -64,19 +64,13 @@ export default function FrpProducts() {
       <div className="cs_horizontal_slider cs_type_1 cs_accent_bg cs_primary_font">
         <div className="cs_slider_inner">
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>FRP ARCHITECTURAL DOMES</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>COLUMN ENCASEMENTS</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FEATHERLIGHT CORNICES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FACADE CLADDING PANELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>MONOLITHIC PLANTERS</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>DECORATIVE JHALIS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>WINDOW ARCHES &amp; PEDIMENTS</span>
+            <span>WINDOW ARCHES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>BALUSTERS &amp; RAILINGS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
@@ -84,25 +78,17 @@ export default function FrpProducts() {
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>BRACKETS &amp; CORBELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FEATHERLIGHT CANTILEVERS</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>UV &amp; MONSOON IMMUNITY</span>
+            <span>PLANTER BOXES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
           </div>
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>FRP ARCHITECTURAL DOMES</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>COLUMN ENCASEMENTS</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FEATHERLIGHT CORNICES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FACADE CLADDING PANELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>MONOLITHIC PLANTERS</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>DECORATIVE JHALIS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>WINDOW ARCHES &amp; PEDIMENTS</span>
+            <span>WINDOW ARCHES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>BALUSTERS &amp; RAILINGS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
@@ -110,9 +96,7 @@ export default function FrpProducts() {
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>BRACKETS &amp; CORBELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FEATHERLIGHT CANTILEVERS</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>UV &amp; MONSOON IMMUNITY</span>
+            <span>PLANTER BOXES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
           </div>
         </div>
