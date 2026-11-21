@@ -68,7 +68,7 @@ export default function FrpProducts() {
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FACADE CLADDING PANELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>DECORATIVE JHALIS</span>
+            <span>DECORATIVE JALIS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>WINDOW ARCHES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
@@ -86,7 +86,7 @@ export default function FrpProducts() {
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FACADE CLADDING PANELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>DECORATIVE JHALIS</span>
+            <span>DECORATIVE JALIS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>WINDOW ARCHES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />

@@ -4,7 +4,7 @@ import { sendInquiry } from "../services/emailService.js";
 
 const PRODUCT_OPTIONS = [
   { value: "GFRC Architectural Cladding Panels", label: "GFRC Architectural Cladding Panels" },
-  { value: "GFRC Jhali / Decorative Screens", label: "GFRC Jhali / Decorative Screens" },
+  { value: "GFRC Jali / Decorative Screens", label: "GFRC Jali / Decorative Screens" },
   { value: "GFRC Columns & Classical Pillars", label: "GFRC Columns & Classical Pillars" },
   { value: "GFRC Architectural Mouldings & Cornices", label: "GFRC Architectural Mouldings & Cornices" },
   { value: "GFRC Window Arches & Portals", label: "GFRC Window Arches & Portals" },
@@ -26,7 +26,7 @@ function detectCategoryFromLocation(pathname, search) {
 
   // 1. Detailed product view via query param ?product=...
   if (productParam) {
-    if (productParam.includes("jhali")) return "GFRC Jhali / Decorative Screens";
+    if (productParam.includes("jhali") || productParam.includes("jali")) return "GFRC Jali / Decorative Screens";
     if (productParam.includes("column-works") || productParam.includes("pillar")) return "GFRC Columns & Classical Pillars";
     if (productParam.includes("facade-works") || productParam.includes("cladding")) return "GFRC Architectural Cladding Panels";
     if (productParam.includes("moulding") || (productParam.includes("cornice") && productParam.startsWith("gfrc"))) {

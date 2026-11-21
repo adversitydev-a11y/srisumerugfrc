@@ -196,20 +196,20 @@ export const projectsData = {
   },
   "bougainville": {
     slug: "bougainville",
-    title: "BOUGAINVILLE — ORNAMENTAL ARCHITECTURAL DETAILING",
-    name: "BOUGAINVILLE — ORNAMENTAL ARCHITECTURAL DETAILING",
-    shortName: "Bougainville",
+    title: "PARVA BOUGAINVILLE — ORNAMENTAL ARCHITECTURAL DETAILING",
+    name: "PARVA BOUGAINVILLE — ORNAMENTAL ARCHITECTURAL DETAILING",
+    shortName: "Parva Bougainville",
     category: "RESIDENTIAL ARCHITECTURE & DECORATIVE FACADE",
     tagline: "RESIDENTIAL ARCHITECTURE & DECORATIVE FACADE",
     date: "2025-04-12",
     dateDisplay: "RESIDENTIAL ARCHITECTURE & DECORATIVE FACADE",
     heroImage: "/assets/img/Projects/Bougainville/Sunlit Classical Arched Colonnade.png",
     listingImage: "/assets/img/Projects/Bougainville/Ornate Cream Villa Boundary Wall.png",
-    listingImageAlt: "Bougainville residential architectural detailing with decorative arches and classical columns",
+    listingImageAlt: "Parva Bougainville residential architectural detailing with decorative arches and classical columns",
     mainImage: "/assets/img/Projects/Bougainville/Ornate Cream Villa Boundary Wall.png",
-    mainImageAlt: "Bougainville residential architectural detailing with decorative arches and classical columns",
+    mainImageAlt: "Parva Bougainville residential architectural detailing with decorative arches and classical columns",
     overviewParagraphs: [
-      "The Bougainville project showcases refined architectural detailing through an elegant combination of decorative arches, classical columns, ornamental wall panels, and carefully profiled cornices. The warm cream exterior and balanced proportions create a sophisticated architectural character that complements the surrounding landscape.",
+      "The Parva Bougainville project showcases refined architectural detailing through an elegant combination of decorative arches, classical columns, ornamental wall panels, and carefully profiled cornices. The warm cream exterior and balanced proportions create a sophisticated architectural character that complements the surrounding landscape.",
       "Repeating arched features, decorative mouldings, and coordinated wall profiles establish a consistent visual rhythm throughout the boundary and façade elements. The design highlights how carefully considered architectural detailing can enhance the appearance of a property while creating a cohesive and welcoming exterior."
     ],
     technicalHeading: "TECHNICAL EXECUTION & QUALITY CONTROL",
@@ -220,17 +220,17 @@ export const projectsData = {
       "Attention to alignment and finishing consistency"
     ],
     technicalImage: "/assets/img/Projects/Bougainville/Sunlit Classical Arched Colonnade.png",
-    technicalImageAlt: "Bougainville classical arched colonnade, refined column detailing, and architectural mouldings",
+    technicalImageAlt: "Parva Bougainville classical arched colonnade, refined column detailing, and architectural mouldings",
     installationHeading: "SITE INSTALLATION & ARCHITECTURAL FINISHING",
     installationDescription: "The repeating arches, columns, and ornamental wall elements require careful coordination to maintain consistent spacing, alignment, and visual continuity. Clean junctions and uniform finishing help preserve the intended architectural character across the installation. Fixing methods and installation procedures should follow the approved drawings and the specifications of the materials used.",
     galleryImages: [
       {
         src: "/assets/img/Projects/Bougainville/Ornate Cream Villa Boundary Wall.png",
-        alt: "Bougainville ornamental boundary wall with relief medallions and classical pilasters"
+        alt: "Parva Bougainville ornamental boundary wall with relief medallions and classical pilasters"
       },
       {
         src: "/assets/img/Projects/Bougainville/Sunlit Classical Arched Colonnade.png",
-        alt: "Bougainville classical colonnade with sunlit decorative arches and cornice profiles"
+        alt: "Parva Bougainville classical colonnade with sunlit decorative arches and cornice profiles"
       }
     ],
     sidebar: {
@@ -239,9 +239,9 @@ export const projectsData = {
       company: "Sri Sumeru GFRC & FRP"
     },
     seo: {
-      title: "Bougainville Architectural Project | Sri Sumeru GFRC & FRP",
-      description: "Explore the Bougainville architectural project featuring decorative arches, classical columns, ornamental mouldings, and refined exterior detailing.",
-      keywords: "Bougainville, Residential Architecture, Decorative Facade, Classical Columns, Ornamental Arches, Sri Sumeru GFRC & FRP"
+      title: "Parva Bougainville Architectural Project | Sri Sumeru GFRC & FRP",
+      description: "Explore the Parva Bougainville architectural project featuring decorative arches, classical columns, ornamental mouldings, and refined exterior detailing.",
+      keywords: "Parva Bougainville, Bougainville, Residential Architecture, Decorative Facade, Classical Columns, Ornamental Arches, Sri Sumeru GFRC & FRP"
     }
   },
   "jst-param": {
@@ -461,7 +461,7 @@ export function getProjectData(slug) {
   if (normalized.includes("harivishram")) {
     return projectsData["harivishram"];
   }
-  if (normalized.includes("bougainville")) {
+  if (normalized.includes("bougainville") || normalized.includes("parva")) {
     return projectsData["bougainville"];
   }
   if (normalized.includes("jst") || normalized.includes("param")) {

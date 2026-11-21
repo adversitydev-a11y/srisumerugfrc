@@ -354,12 +354,12 @@ export const productsData = {
     id: "gfrc-jhali-works",
     category: "Sri Sumeru GFRC ARCHITECTURAL PRODUCTS",
     categoryLink: "/gfrc-products",
-    title: "GFRC Jhali Works",
+    title: "GFRC Jali Works",
     subtitle: "Intricate Filigree, Solar Shading & Perforated Screens",
     desc: "Timeless geometric, floral, and Islamic lattice Sri Sumeru GFRC screens manufactured with razor-sharp CNC tooling. Ideal for facade sunscreens, balcony privacy screens, atrium dividers, and boundary walls.",
     heroImg: "/assets/categories/gfrc/jhali-works/JH-01.png",
     overviewTitle: "Exquisite Latticework with Enduring Concrete Strength",
-    overviewDesc1: "Cast with precision premix Sri Sumeru GFRC formulation, our jhalis capture razor-sharp geometric cuts, florals, and mashrabiya patterns that are impossible with natural stone or brittle terracotta.",
+    overviewDesc1: "Cast with precision premix Sri Sumeru GFRC formulation, our jalis capture razor-sharp geometric cuts, florals, and mashrabiya patterns that are impossible with natural stone or brittle terracotta.",
     overviewDesc2: "Each panel is treated with hydrophobic silane sealers to resist rain, efflorescence, algae growth, and environmental pollution while providing natural cross-ventilation.",
     overviewImg: "/assets/categories/gfrc/jhali-works/JH-02.png",
     badges: [
@@ -380,16 +380,16 @@ export const productsData = {
       "Staircase Enclosure Screens",
       "Interior Feature Partitions"
     ],
-    ctaTitle: "Looking for GFRC Jhali Works?",
+    ctaTitle: "Looking for GFRC Jali Works?",
     ctaDesc: "Discuss your ornamental pattern requirements or request our standard catalogue of heritage jali patterns today.",
     footerSubtitle: "START YOUR PROJECT",
-    footerTitle: "Need Custom GFRC Jhali Works?",
+    footerTitle: "Need Custom GFRC Jali Works?",
     footerDesc: "Share your preferred patterns, dimensions, or design ideas with us. Our team will help you choose or craft the perfect jali.",
     gallery: [
       { code: "JH-01", src: "/assets/categories/gfrc/jhali-works/JH-01.png", title: "Traditional Geometric Jali Pattern", alt: "Traditional Geometric Jali Pattern"  },
       { code: "JH-02", src: "/assets/categories/gfrc/jhali-works/JH-02.png", title: "Floral Filigree Lattice Detail", alt: "Floral Filigree Lattice Detail"  },
       { code: "JH-03", src: "/assets/categories/gfrc/jhali-works/JH-03.png", title: "High-Relief Openwork Screen", alt: "High-Relief Openwork Screen"  },
-      { code: "JH-04", src: "/assets/categories/gfrc/jhali-works/JH-04.png", title: "Full-Height Vertical Jhali Screen", alt: "Full-Height Vertical Jhali Screen"  },
+      { code: "JH-04", src: "/assets/categories/gfrc/jhali-works/JH-04.png", title: "Full-Height Vertical Jali Screen", alt: "Full-Height Vertical Jali Screen"  },
       { code: "JH-05", src: "/assets/categories/gfrc/jhali-works/JH-05.png", title: "Parametric Perforated Screen Panel", alt: "Parametric Perforated Screen Panel"  },
       { code: "JH-06", src: "/assets/categories/gfrc/jhali-works/JH-06.png", title: "Exterior Solar Shading Installation", alt: "Exterior Solar Shading Installation"  }
     ]
@@ -576,12 +576,12 @@ export const productsData = {
     id: "frp-jhali-works",
     category: "Sri Sumeru FRP ARCHITECTURAL PRODUCTS",
     categoryLink: "/frp-products",
-    title: "FRP Jhali Works",
+    title: "FRP Jali Works",
     subtitle: "Precision Perforated Composite Screens & Lightweight Solar Shading Lattices",
-    desc: "Sri Sumeru FRP decorative jhalis deliver sharp filigree latticework and intricate geometric solar shading screens that are 100% moisture-immune and rust-free, making them ideal for high-humidity coastal zones, rooftop pergolas, and exterior balcony solar screens.",
+    desc: "Sri Sumeru FRP decorative jalis deliver sharp filigree latticework and intricate geometric solar shading screens that are 100% moisture-immune and rust-free, making them ideal for high-humidity coastal zones, rooftop pergolas, and exterior balcony solar screens.",
     heroImg: "/assets/categories/gfrc/jhali-works/JH-02.png",
     overviewTitle: "Exquisite Perforated Screens with Zero Rust and Featherlight Rigging",
-    overviewDesc1: "Molded from precision master tooling, our FRP jhalis produce flawless multi-depth perforations without the edge brittleness of natural sandstone or the corrosion vulnerability of iron and mild steel.",
+    overviewDesc1: "Molded from precision master tooling, our FRP jalis produce flawless multi-depth perforations without the edge brittleness of natural sandstone or the corrosion vulnerability of iron and mild steel.",
     overviewDesc2: "Ideal for high-elevation balcony balustrades and building breezeway screens where lightweight safety and zero structural loading are vital.",
     overviewImg: "/assets/categories/gfrc/jhali-works/JH-03.png",
     badges: [
@@ -602,10 +602,10 @@ export const productsData = {
       "Heritage Banquet Hall Partition Screens",
       "Coastal Villa Architectural Jali Murals"
     ],
-    ctaTitle: "Looking for FRP Jhali Works?",
+    ctaTitle: "Looking for FRP Jali Works?",
     ctaDesc: "Share your custom jaali motif, aperture percentage, or CAD drawings with our team for rapid mould development and quotation.",
     footerSubtitle: "START YOUR PROJECT",
-    footerTitle: "Need Custom FRP Jhali Works?",
+    footerTitle: "Need Custom FRP Jali Works?",
     footerDesc: "Send your custom pattern drawings or elevation dimensions to receive technical feasibility feedback and budget estimates.",
     gallery: [
       { code: "FRP-JH-01", src: "/assets/categories/gfrc/jhali-works/JH-02.png", title: "Floral Lattice Perforated Composite Screen", alt: "Floral Lattice Perforated Composite Screen" },
@@ -794,6 +794,9 @@ export const productsData = {
   "decorative-jalis": { id: "decorative-jalis", alias: "gfrc-jhali-works" },
   "jalis": { id: "jalis", alias: "gfrc-jhali-works" },
   "jhali-works": { id: "jhali-works", alias: "gfrc-jhali-works" },
+  "jali-works": { id: "jali-works", alias: "gfrc-jhali-works" },
+  "gfrc-jali-works": { id: "gfrc-jali-works", alias: "gfrc-jhali-works" },
+  "frp-jali-works": { id: "frp-jali-works", alias: "frp-jhali-works" },
 
   "columns": { id: "columns", alias: "gfrc-column-works" },
   "columns-and-capitals": { id: "columns-and-capitals", alias: "gfrc-column-works" },

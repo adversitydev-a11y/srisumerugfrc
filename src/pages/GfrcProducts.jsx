@@ -74,7 +74,7 @@ export default function GfrcProducts() {
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FACADE CLADDING WORKS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>JHALI SCREENS</span>
+            <span>JALI SCREENS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>PLANTER BOXES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
@@ -92,7 +92,7 @@ export default function GfrcProducts() {
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>FACADE CLADDING WORKS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>JHALI SCREENS</span>
+            <span>JALI SCREENS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
             <span>PLANTER BOXES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />

@@ -82,13 +82,13 @@ const ROUTES = [
   {
     path: "projects/bougainville",
     canonical: `${SITE_URL}/projects/bougainville`,
-    title: "Bougainville Architectural Project | Sri Sumeru GFRC & FRP",
+    title: "Parva Bougainville Architectural Project | Sri Sumeru GFRC & FRP",
     description:
-      "Explore the Bougainville architectural project featuring decorative arches, classical columns, ornamental mouldings, and refined exterior detailing.",
+      "Explore the Parva Bougainville architectural project featuring decorative arches, classical columns, ornamental mouldings, and refined exterior detailing.",
     breadcrumbs: [
       { name: "Home", item: `${SITE_URL}/` },
       { name: "Projects", item: `${SITE_URL}/projects` },
-      { name: "Bougainville", item: `${SITE_URL}/projects/bougainville` },
+      { name: "Parva Bougainville", item: `${SITE_URL}/projects/bougainville` },
     ],
   },
   {
