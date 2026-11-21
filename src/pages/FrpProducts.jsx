@@ -64,39 +64,43 @@ export default function FrpProducts() {
       <div className="cs_horizontal_slider cs_type_1 cs_accent_bg cs_primary_font">
         <div className="cs_slider_inner">
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>COLUMN ENCASEMENTS</span>
+            <span>FRP ARCHITECTURAL PRODUCTS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FACADE CLADDING PANELS</span>
+            <span>FRP FACADE CLADDING PANELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>DECORATIVE JALIS</span>
+            <span>DECORATIVE FRP JALI SCREENS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>WINDOW ARCHES</span>
+            <span>FRP COLUMN ENCASEMENTS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>BALUSTERS &amp; RAILINGS</span>
+            <span>FRP BALUSTERS &amp; RAILINGS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>ARCHITECTURAL MOULDINGS</span>
+            <span>FRP WINDOW ARCHES &amp; MOULDINGS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>BRACKETS &amp; CORBELS</span>
+            <span>FRP BRACKETS &amp; CORBELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>PLANTER BOXES</span>
+            <span>FRP PLANTER BOXES</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>CUSTOM FIBRE REINFORCED POLYMER COMPONENTS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
           </div>
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>COLUMN ENCASEMENTS</span>
+            <span>FRP ARCHITECTURAL PRODUCTS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FACADE CLADDING PANELS</span>
+            <span>FRP FACADE CLADDING PANELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>DECORATIVE JALIS</span>
+            <span>DECORATIVE FRP JALI SCREENS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>WINDOW ARCHES</span>
+            <span>FRP COLUMN ENCASEMENTS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>BALUSTERS &amp; RAILINGS</span>
+            <span>FRP BALUSTERS &amp; RAILINGS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>ARCHITECTURAL MOULDINGS</span>
+            <span>FRP WINDOW ARCHES &amp; MOULDINGS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>BRACKETS &amp; CORBELS</span>
+            <span>FRP BRACKETS &amp; CORBELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>PLANTER BOXES</span>
+            <span>FRP PLANTER BOXES</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>CUSTOM FIBRE REINFORCED POLYMER COMPONENTS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
           </div>
         </div>

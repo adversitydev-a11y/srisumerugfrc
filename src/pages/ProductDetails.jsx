@@ -81,28 +81,34 @@ export default function ProductDetails() {
       <div className="cs_horizontal_slider cs_type_1 cs_accent_bg cs_primary_font">
         <div className="cs_slider_inner">
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>SPRAY-UP &amp; PREMIX FABRICATION</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>THIN-WALL ARCHITECTURAL CASTING</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>GRADE 10P &amp; 18P CERTIFIED</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>CUSTOM 3D MOULD ENGINEERING</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FAST 24-HOUR DEMOULDING</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            {(product.movingLineItems || [
+              product.title,
+              product.category,
+              "Custom Architectural Design & Fabrication",
+              "Product Dimensions & Finish Options",
+              "Architectural Applications & Installation Details",
+              "Sri Sumeru GFRC & FRP"
+            ]).map((item, idx) => (
+              <React.Fragment key={idx}>
+                <span>{item}</span>
+                <img src="/assets/img/star-shape.svg" alt="Star shape" />
+              </React.Fragment>
+            ))}
           </div>
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>SPRAY-UP &amp; PREMIX FABRICATION</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>THIN-WALL ARCHITECTURAL CASTING</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>GRADE 10P &amp; 18P CERTIFIED</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>CUSTOM 3D MOULD ENGINEERING</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FAST 24-HOUR DEMOULDING</span>
-            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            {(product.movingLineItems || [
+              product.title,
+              product.category,
+              "Custom Architectural Design & Fabrication",
+              "Product Dimensions & Finish Options",
+              "Architectural Applications & Installation Details",
+              "Sri Sumeru GFRC & FRP"
+            ]).map((item, idx) => (
+              <React.Fragment key={`dup-${idx}`}>
+                <span>{item}</span>
+                <img src="/assets/img/star-shape.svg" alt="Star shape" />
+              </React.Fragment>
+            ))}
           </div>
         </div>
       </div>

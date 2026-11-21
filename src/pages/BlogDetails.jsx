@@ -61,6 +61,40 @@ export default function BlogDetails() {
         </div>
       </section>
 
+      {/* Dynamic Moving Ticker Line */}
+      <div className="cs_horizontal_slider cs_type_1 cs_accent_bg cs_primary_font">
+        <div className="cs_slider_inner">
+          <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
+            {(post.movingLineItems || [
+              post.cardTitle || post.articleTitle,
+              post.category || "ARCHITECTURAL TOPIC",
+              "Glass Fibre Reinforced Concrete & Composite Architecture",
+              "Architectural Knowledge & Industry Insights",
+              "Sri Sumeru GFRC & FRP"
+            ]).map((item, idx) => (
+              <React.Fragment key={idx}>
+                <span>{item}</span>
+                <img src="/assets/img/star-shape.svg" alt="Star shape" />
+              </React.Fragment>
+            ))}
+          </div>
+          <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
+            {(post.movingLineItems || [
+              post.cardTitle || post.articleTitle,
+              post.category || "ARCHITECTURAL TOPIC",
+              "Glass Fibre Reinforced Concrete & Composite Architecture",
+              "Architectural Knowledge & Industry Insights",
+              "Sri Sumeru GFRC & FRP"
+            ]).map((item, idx) => (
+              <React.Fragment key={`dup-${idx}`}>
+                <span>{item}</span>
+                <img src="/assets/img/star-shape.svg" alt="Star shape" />
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Blog Details Section */}
       <div className="container">
         <div className="cs_height_120 cs_height_lg_80"></div>

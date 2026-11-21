@@ -64,39 +64,43 @@ export default function GfrcProducts() {
       <div className="cs_horizontal_slider cs_type_1 cs_accent_bg cs_primary_font">
         <div className="cs_slider_inner">
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>ARCHITECTURAL MOULDINGS</span>
+            <span>GFRC ARCHITECTURAL MOULDINGS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>BALUSTERS &amp; RAILINGS</span>
+            <span>GFRC FACADE CLADDING PANELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>BRACKETS &amp; CORBELS</span>
+            <span>DECORATIVE GFRC JALI SCREENS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>COLUMN WORKS</span>
+            <span>GFRC COLUMNS &amp; CAPITALS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FACADE CLADDING WORKS</span>
+            <span>GFRC BALUSTERS &amp; RAILINGS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>JALI SCREENS</span>
+            <span>ARCHITECTURAL BRACKETS &amp; CORBELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>PLANTER BOXES</span>
+            <span>GFRC WINDOW ARCHES &amp; CORNICES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>WINDOW ARCHES</span>
+            <span>GFRC PLANTER BOXES</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>CUSTOM GLASS FIBRE REINFORCED CONCRETE PRODUCTS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
           </div>
           <div className="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-            <span>ARCHITECTURAL MOULDINGS</span>
+            <span>GFRC ARCHITECTURAL MOULDINGS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>BALUSTERS &amp; RAILINGS</span>
+            <span>GFRC FACADE CLADDING PANELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>BRACKETS &amp; CORBELS</span>
+            <span>DECORATIVE GFRC JALI SCREENS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>COLUMN WORKS</span>
+            <span>GFRC COLUMNS &amp; CAPITALS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>FACADE CLADDING WORKS</span>
+            <span>GFRC BALUSTERS &amp; RAILINGS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>JALI SCREENS</span>
+            <span>ARCHITECTURAL BRACKETS &amp; CORBELS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>PLANTER BOXES</span>
+            <span>GFRC WINDOW ARCHES &amp; CORNICES</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
-            <span>WINDOW ARCHES</span>
+            <span>GFRC PLANTER BOXES</span>
+            <img src="/assets/img/star-shape.svg" alt="Star shape" />
+            <span>CUSTOM GLASS FIBRE REINFORCED CONCRETE PRODUCTS</span>
             <img src="/assets/img/star-shape.svg" alt="Star shape" />
           </div>
         </div>

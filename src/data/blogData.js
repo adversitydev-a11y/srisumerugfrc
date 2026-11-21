@@ -13,6 +13,7 @@ export const blogData = {
     detailImage: "/assets/img/post-img-26.webp",
     detailImageAlt: "GFRC Geometric Screen Pattern",
     cardTitle: "WHY GFRC IS REVOLUTIONIZING MODERN HIGH-RISE FACADES",
+    movingLineItems: ["GFRC Facade Cladding Explained","Modern High-Rise Engineering","Glass Fibre Reinforced Concrete Panels","Building Elevation Design & Weight Advantages","Architectural Knowledge & Industry Insights","Sri Sumeru GFRC & FRP"],
     articleTitle: "Why GFRC is Revolutionizing Modern High-Rise Facades (50% Weight Advantage)",
     seo: {
       title: "Why GFRC is Revolutionizing Modern High-Rise Facades | SRI SUMERU GFRC & FRP",
@@ -58,6 +59,7 @@ export const blogData = {
     thumbImage: "/assets/img/post-img-11.webp",
     bannerImage: "/assets/img/post-img-11.webp",
     cardTitle: "DESIGNING CUSTOM GFRC JALI SCREENS FOR PASSIVE COOLING",
+    movingLineItems: ["Designing Custom GFRC Jali Screens","Passive Solar Cooling & Ventilation","Perforated Architectural Lattice Panels","Sustainable Facade Design","Architectural Knowledge & Industry Insights","Sri Sumeru GFRC & FRP"],
     articleTitle: "Designing Custom GFRC Jali Screens for Passive Cooling",
     seo: {
       title: "Designing Custom GFRC Jali Screens for Passive Cooling | SRI SUMERU GFRC & FRP",
@@ -103,6 +105,7 @@ export const blogData = {
     thumbImage: "/assets/img/post-img-12.webp",
     bannerImage: "/assets/img/post-img-12.webp",
     cardTitle: "SPRAY-UP VS PREMIX CASTING: CHOOSING THE IDEAL WORKFLOW",
+    movingLineItems: ["Spray-Up vs Premix Casting Workflows","Architectural Concrete Fabrication","Thin-Wall Casting & Flexural Strength","High-Volume Production Techniques","Architectural Knowledge & Industry Insights","Sri Sumeru GFRC & FRP"],
     articleTitle: "Spray-Up vs Premix Casting: Choosing the Ideal Workflow",
     seo: {
       title: "Spray-Up vs Premix GFRC Casting Explained | SRI SUMERU GFRC & FRP",
@@ -148,6 +151,7 @@ export const blogData = {
     thumbImage: "/assets/img/post-img-13.webp",
     bannerImage: "/assets/img/post-img-13.webp",
     cardTitle: "RESTORING HISTORIC DOMES, JHAROKHAS & ORNATE CORNICES",
+    movingLineItems: ["Restoring Historic Domes, Jharokhas & Cornices","Heritage Temple Architectural Restoration","Lightweight FRP & GFRC Composite Elements","Monumental Shikhara Craftsmanship","Architectural Knowledge & Industry Insights","Sri Sumeru GFRC & FRP"],
     articleTitle: "Restoring Historic Domes, Jharokhas & Ornate Cornices",
     seo: {
       title: "Restoring Historic Domes, Jharokhas & Cornices | SRI SUMERU GFRC & FRP",
@@ -193,6 +197,7 @@ export const blogData = {
     thumbImage: "/assets/img/post-img-14.webp",
     bannerImage: "/assets/img/post-img-14.webp",
     cardTitle: "GRADE 18P SPECIFICATIONS: DURABILITY & FIRE RESISTANCE",
+    movingLineItems: ["Grade 18P Technical Specifications","Durability, Flexural Strength & Fire Resistance","Alkali-Resistant Glass Fiber Matrix Testing","Structural Quality & Compliance","Architectural Knowledge & Industry Insights","Sri Sumeru GFRC & FRP"],
     articleTitle: "Grade 18P Specifications: Durability & Fire Resistance",
     seo: {
       title: "Grade 18P GFRC Specifications: Durability & Fire Resistance | SRI SUMERU",
@@ -238,6 +243,7 @@ export const blogData = {
     thumbImage: "/assets/img/post-img-15.webp",
     bannerImage: "/assets/img/post-img-15.webp",
     cardTitle: "SEAMLESS COLUMN ENCASEMENTS & PORTICO ERECTION",
+    movingLineItems: ["Seamless Column Encasements & Portico Erection","Classical Architectural Pillar Detailing","FRP & GFRC Hollow Column Cladding","Dry Installation & Site Rigging","Architectural Knowledge & Industry Insights","Sri Sumeru GFRC & FRP"],
     articleTitle: "Seamless Column Encasements & Portico Erection",
     seo: {
       title: "Seamless GFRC Column Encasements & Portico Erection | SRI SUMERU",

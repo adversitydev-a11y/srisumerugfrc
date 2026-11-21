@@ -8,6 +8,8 @@ export const projectsData = {
     title: "SECRETARIAT OFFICE — ORNAMENTAL ARCHITECTURAL PAVILION",
     name: "SECRETARIAT OFFICE — ORNAMENTAL ARCHITECTURAL PAVILION",
     shortName: "Secretariat Office",
+    projectCategory: "Institutional Architectural Features & Ornamental Structures",
+    movingLineItems: ["Secretariat Office","Institutional Architectural Features & Ornamental Structures","Custom Domed Pavilion & Fluted Columns","GFRC & FRP Solutions by Sri Sumeru"],
     category: "ARCHITECTURAL FEATURES & ORNAMENTAL STRUCTURES",
     tagline: "ARCHITECTURAL FEATURES & ORNAMENTAL STRUCTURES",
     date: "2025-01-05",
@@ -49,6 +51,8 @@ export const projectsData = {
     title: "BASAVA HALL — TRADITIONAL ARCHITECTURAL DETAILING",
     name: "BASAVA HALL — TRADITIONAL ARCHITECTURAL DETAILING",
     shortName: "Basava Hall",
+    projectCategory: "Hall Architecture & Decorative Detailing",
+    movingLineItems: ["Basava Hall","Hall Architecture & Decorative Detailing","Traditional Veranda Columns & Detailing","GFRC Solutions by Sri Sumeru"],
     category: "INSTITUTIONAL ARCHITECTURE & ORNAMENTAL DETAILING",
     tagline: "INSTITUTIONAL ARCHITECTURE & ORNAMENTAL DETAILING",
     date: "2025-01-15",
@@ -99,6 +103,8 @@ export const projectsData = {
     title: "KAIVALYA — ORNATE ARCHITECTURAL ELEGANCE",
     name: "KAIVALYA — ORNATE ARCHITECTURAL ELEGANCE",
     shortName: "Kaivalya",
+    projectCategory: "Residential Facade Design & Architectural Elements",
+    movingLineItems: ["Kaivalya","Residential Facade Design & Architectural Elements","Ornate Villa Columns & Porch Detailing","GFRC & FRP Solutions by Sri Sumeru"],
     category: "RESIDENTIAL ARCHITECTURE & ORNAMENTAL DETAILING",
     tagline: "RESIDENTIAL ARCHITECTURE & ORNAMENTAL DETAILING",
     date: "2025-02-10",
@@ -149,6 +155,8 @@ export const projectsData = {
     title: "HARIVISHRAM — CONTEMPORARY RESIDENTIAL FACADE",
     name: "HARIVISHRAM — CONTEMPORARY RESIDENTIAL FACADE",
     shortName: "Harivishram",
+    projectCategory: "Residential Architecture & Exterior Facade Detailing",
+    movingLineItems: ["Harivishram","Residential Architecture & Exterior Facade Detailing","Contemporary Apartment Towers & Facade Detailing","GFRC Solutions by Sri Sumeru"],
     category: "RESIDENTIAL ARCHITECTURE & FACADE DETAILING",
     tagline: "RESIDENTIAL ARCHITECTURE & FACADE DETAILING",
     date: "2025-03-18",
@@ -199,6 +207,8 @@ export const projectsData = {
     title: "PARVA BOUGAINVILLE — ORNAMENTAL ARCHITECTURAL DETAILING",
     name: "PARVA BOUGAINVILLE — ORNAMENTAL ARCHITECTURAL DETAILING",
     shortName: "Parva Bougainville",
+    projectCategory: "Residential Decorative Facade & Ornamental Features",
+    movingLineItems: ["Parva Bougainville","Residential Decorative Facade & Ornamental Features","Classical Arched Colonnade & Pilasters","GFRC Solutions by Sri Sumeru"],
     category: "RESIDENTIAL ARCHITECTURE & DECORATIVE FACADE",
     tagline: "RESIDENTIAL ARCHITECTURE & DECORATIVE FACADE",
     date: "2025-04-12",
@@ -249,6 +259,8 @@ export const projectsData = {
     title: "JST PARAM — CONTEMPORARY HIGH-RISE FACADE",
     name: "JST PARAM — ONGOING FACADE PROJECT",
     shortName: "JST Param",
+    projectCategory: "Commercial Architecture & Facade Cladding",
+    movingLineItems: ["JST Param","Commercial Architecture & Facade Cladding","High-Rise Glazed Elevation & Cladding Podium","Commercial GFRC Solutions by Sri Sumeru"],
     category: "COMMERCIAL ARCHITECTURE & FACADE CLADDING",
     tagline: "COMMERCIAL ARCHITECTURE & FACADE CLADDING",
     date: "2025-07-28",
@@ -299,6 +311,8 @@ export const projectsData = {
     title: "PURVA AEROCITY — CONTEMPORARY ARCHITECTURAL FACADE",
     name: "PURVA AEROCITY — CONTEMPORARY ARCHITECTURAL FACADE",
     shortName: "Purva Aerocity",
+    projectCategory: "Commercial Building Elevation & Facade Detailing",
+    movingLineItems: ["Purva Aerocity","Commercial Building Elevation & Facade Detailing","Commercial Facade & Guardhouse Portal","GFRC & FRP Solutions by Sri Sumeru"],
     category: "COMMERCIAL ARCHITECTURE & FACADE DETAILING",
     tagline: "COMMERCIAL ARCHITECTURE & FACADE DETAILING",
     date: "2025-05-10",
@@ -349,6 +363,8 @@ export const projectsData = {
     title: "DHYAN MANDIR — ORNATE ARCHITECTURAL ENTRANCE",
     name: "DHYAN MANDIR — ORNATE ARCHITECTURAL ENTRANCE",
     shortName: "Dhyan Mandir",
+    projectCategory: "Temple Architecture & Ornamental Facade Elements",
+    movingLineItems: ["Dhyan Mandir","Temple Architecture & Ornamental Facade Elements","Heritage Temple Portico & Carved Mandap","Temple GFRC Solutions by Sri Sumeru"],
     category: "TEMPLE ARCHITECTURE & DECORATIVE FACADE",
     tagline: "TEMPLE ARCHITECTURE & DECORATIVE FACADE",
     date: "2025-06-15",
@@ -399,6 +415,8 @@ export const projectsData = {
     title: "SHANKARA RESIDENTIAL APARTMENT COMPLEX",
     name: "SHANKARA RESIDENTIAL APARTMENT COMPLEX",
     shortName: "Shankara",
+    projectCategory: "Residential Architectural Facade & Exterior Detailing",
+    movingLineItems: ["Shankara","Residential Architectural Facade & Exterior Detailing","Apartment Balcony Profiles & Window Surrounds","GFRC Solutions by Sri Sumeru"],
     category: "RESIDENTIAL ARCHITECTURE & FACADE DETAILING",
     tagline: "RESIDENTIAL ARCHITECTURE & FACADE DETAILING",
     date: "2025-09-20",
@@ -555,24 +573,20 @@ export function getProjectHtml(project) {
     <div class="cs_horizontal_slider cs_type_1 cs_accent_bg cs_primary_font">
       <div class="cs_slider_inner">
         <div class="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-          <span>${p.category}</span>
-          <img src="/assets/img/star-shape.svg" alt="Star shape">
-          <span>ARCHITECTURAL FACADE & DETAILING</span>
-          <img src="/assets/img/star-shape.svg" alt="Star shape">
-          <span>PRECISION 3D MOULD ENGINEERING</span>
-          <img src="/assets/img/star-shape.svg" alt="Star shape">
-          <span>Sri Sumeru GFRC & FRP</span>
-          <img src="/assets/img/star-shape.svg" alt="Star shape">
+          ${(p.movingLineItems || [
+            p.shortName || p.title,
+            p.projectCategory || p.category,
+            "Custom Architectural Elements & Detailing",
+            "GFRC & FRP Solutions by Sri Sumeru"
+          ]).map((item) => `<span>${item}</span>\n          <img src="/assets/img/star-shape.svg" alt="Star shape">`).join('\n          ')}
         </div>
         <div class="cs_sliding_content cs_fs_24 cs_bold cs_white_color">
-          <span>${p.category}</span>
-          <img src="/assets/img/star-shape.svg" alt="Star shape">
-          <span>ARCHITECTURAL FACADE & DETAILING</span>
-          <img src="/assets/img/star-shape.svg" alt="Star shape">
-          <span>PRECISION 3D MOULD ENGINEERING</span>
-          <img src="/assets/img/star-shape.svg" alt="Star shape">
-          <span>Sri Sumeru GFRC & FRP</span>
-          <img src="/assets/img/star-shape.svg" alt="Star shape">
+          ${(p.movingLineItems || [
+            p.shortName || p.title,
+            p.projectCategory || p.category,
+            "Custom Architectural Elements & Detailing",
+            "GFRC & FRP Solutions by Sri Sumeru"
+          ]).map((item) => `<span>${item}</span>\n          <img src="/assets/img/star-shape.svg" alt="Star shape">`).join('\n          ')}
         </div>
       </div>
     </div>
